@@ -3,6 +3,7 @@ class D3MapPoints extends D3Map  {
     constructor(selection, data, config = {}) {
         super(selection, data, config)
         this.circles = {};
+        this.cfg.circlesize = 12;
         this.colorScale = d3.scaleSequential(d3.interpolateViridis)
     }
 

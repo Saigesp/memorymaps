@@ -13,7 +13,6 @@ class D3Map {
             'lat': 0,
             'lng': 0,
             'zoom': 16,
-            'circlesize': 12,
             'tileprovider': 'Stamen.Watercolor',
         };
         Object.keys(config).forEach(function(key) {

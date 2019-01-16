@@ -38,7 +38,7 @@ var updateQueryStringArray = function(param, value) {
 }
 
 // Get URL query parameters
-var getQueryStringParam = function (name, url) {
+var getQueryStringParam = function(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -48,72 +48,30 @@ var getQueryStringParam = function (name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var getQueryStringArray = function (name, url) {
+var getQueryStringArray = function(name, url) {
     var param = getQueryStringParam(name, url);
     if(param && param != '') return param.split(',')
     return [];
 }
 
-var openInNewTab = function (url) {
+var openInNewTab = function(url) {
   var win = window.open(url, '_blank');
   win.focus();
 }
 
-var copyToClipboard = function (str=window.location.href) {
+var copyToClipboard = function(str=window.location.href) {
     var hiddenInput = document.getElementById("js-copytext")
     hiddenInput.value = str;
     document.execCommand("Copy", false, document.getElementById('js-copytext').select());
     alert("Url copiada en el portapapeles");
 }
 
-var shareOnTwitter = function (url=window.location.href, msg="") {
+var shareOnTwitter = function(url=window.location.href, msg="") {
     url = escape(url);
     openInNewTab('http://twitter.com/share?text='+msg+'&url='+url)
 }
 
-var shareOnFacebook = function (url=window.location.href) {
+var shareOnFacebook = function(url=window.location.href) {
     url = escape(url);
     openInNewTab('https://www.facebook.com/sharer/sharer.php?u='+url)
 }
-
-
-
-
-
-/*
-var initConfig = {
-    'lat': 40.428655,
-    'lng': -3.6622,
-    'zoom': 12,
-    'circlesize': 30,
-}
-var cfg = {};
-
-// Integrer keys (lar, lng, zoom)
-Object.keys(initConfig).forEach(function(key) {
-    let qparam = getQueryStringParam(key);
-    cfg[key] = !isNaN(qparam) && qparam != null ? +qparam : initConfig[key];
-});
-
-// String keys
-var optionalkeys = ['dist','act', 'st', 'point'];
-optionalkeys.forEach(function(key){
-    if(getQueryStringParam(key) != null){
-        cfg[key] = getQueryStringParam(key);
-    }
-})
-
-
-d3.csv("assets/data/").then(function(data) {
-
-    data.forEach(function(d){
-
-    })
-
-    var container = d3.select('#map')
-        .style('height', window.innerHeight + 'px');
-
-    ahmap = new Map(container, data, cfg);
-
-});
-*/
