@@ -1,10 +1,7 @@
 // Clean string array of empty strings ("")
 Array.prototype.clean = function(deleteValue) {
   for (var i = 0; i < this.length; i++) {
-    if (this[i] == deleteValue) {         
-      this.splice(i, 1);
-      i--;
-    }
+    if (this[i] == deleteValue){ this.splice(i, 1); i--; }
   }
   return this;
 };
@@ -21,16 +18,12 @@ var updateQueryStringParam = function (key, value) {
         if( typeof value == 'undefined' || value == null || value == '' ) {
             params = urlQueryString.replace(removeRegex, "$1");
             params = params.replace( /[&;]$/, "" );
-        } else if (urlQueryString.match(updateRegex) !== null) {
-            params = urlQueryString.replace(updateRegex, "$1" + newParam);
-        } else { 
-            params = urlQueryString + '&' + newParam;
-        }
+        } else if (urlQueryString.match(updateRegex) !== null) { params = urlQueryString.replace(updateRegex, "$1" + newParam);
+        } else params = urlQueryString + '&' + newParam;
     }
     params = params == '?' ? '' : params;
     window.history.pushState({}, "", baseUrl + params);
 };
-
 
 // Update URL Query array mode
 var updateQueryStringArray = function(param, value) {
@@ -38,18 +31,11 @@ var updateQueryStringArray = function(param, value) {
     if (actualquery){
         var arr = actualquery.split(',');
         var index = arr.indexOf(value);
-        if(index >= 0){
-            arr.splice(index, 1);
-            updateQueryStringParam(param, arr.join(","))
-        }else{
-            actualquery += ','+value;
-            updateQueryStringParam(param, actualquery)
-        }
-    }else{
-        updateQueryStringParam(param, value);
-    }
+        if(index >= 0){arr.splice(index, 1);updateQueryStringParam(param, arr.join(","))}
+        else{actualquery += ','+value;updateQueryStringParam(param, actualquery)}
+    }else updateQueryStringParam(param, value);
+    
 }
-
 
 // Get URL query parameters
 var getQueryStringParam = function (name, url) {
@@ -64,9 +50,7 @@ var getQueryStringParam = function (name, url) {
 
 var getQueryStringArray = function (name, url) {
     var param = getQueryStringParam(name, url);
-    if(param && param != ''){
-        return param.split(',')
-    }
+    if(param && param != '') return param.split(',')
     return [];
 }
 

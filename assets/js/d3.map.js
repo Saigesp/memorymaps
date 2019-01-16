@@ -14,7 +14,7 @@ class D3Map {
             'lng': 0,
             'zoom': 16,
             'circlesize': 12,
-            'tileprovider': 'CartoDB.Positron',
+            'tileprovider': 'Stamen.Watercolor',
         };
         Object.keys(config).forEach(function(key) {
             if(config[key] instanceof Object && config[key] instanceof Array === false){
@@ -44,11 +44,6 @@ class D3Map {
                 lng: this.map.getCenter().lng,
                 zoom: this.map.getZoom()
             })
-        });
-        
-        L.tileLayer(
-            "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            maxZoom: 18,
         });
 
         L.tileLayer.provider(self.cfg.tileprovider).addTo(this.map);

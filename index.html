@@ -55,8 +55,7 @@
     <body>        
         <div id="app" class="main">
             <div id="overmap"></div>
-            <div id="map"></div>
-            ops
+            <pointsmap id="id" uuid="uuid" :lat="lat" :lng="lng" :zoom="zoom"></pointsmap>
         </div>
     </body>
 
@@ -65,6 +64,72 @@
     <script src="assets/js/d3.map.js"></script>
     <script src="assets/js/d3.map.points.js"></script>
     <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+    const EventBus = new Vue();
+
+    Vue.component('pointsmap', {
+        data: function () {
+            return {
+                points: [],
+                showProv: {airbnb:false, homeaw: false, tripad:false},
+                hasProv: {airbnb:false, homeaw: false, tripad:false},
+            }
+        },
+        props: ['uuid', 'id', 'lat', 'lng', 'zoom'],
+        template: `
+        <div id="map" style="height: 100%;"></div>
+        `,
+        mounted: function(){
+            var self = this;
+
+            self.map = new D3MapPoints(d3.select(self.$el), self.points ,{
+                lat: self.lat,
+                lng: self.lng,
+                zoom: self.zoom,
+                height: d3.select(self.$el).attr('height'),
+            });
+
+            self.map.on('move', (data)=>{
+                EventBus.$emit('map_move', data);
+            })
+
+        },
+        watch: {
+            points: function(val){
+                this.map.loadPoints(this.points);
+            }
+        }
+    })
+    
+
+
+
+
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            lat: getQueryStringParam('lat') ? getQueryStringParam('lat') : 40.428655,
+            lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.6622,
+            zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 12,
+        },
+        mounted: function(){
+            var self = this;
+            EventBus.$on('map_move', (data)=>{
+                self.lat = data.lat;
+                self.lng = data.lng;
+                self.zoom = data.zoom;
+            });
+
+        },
+        watch: {
+            lat: function(val) { updateQueryStringParam('lat', val); },
+            lng: function(val) { updateQueryStringParam('lng', val); },
+            zoom: function(val){ updateQueryStringParam('zoom', val); },
+        }
+    });
+        
+    </script>
     <!-- end scripts -->
 
 </html>
