@@ -8,7 +8,7 @@ Se recomienda desarrollar con **Firefox**. Debido a la política [CORS](https://
 
 **Python 3**
 
-Ejecutar dentro de carpeta `/map`:
+Ejecutar en la raíz del proyecto:
 
 ```sh
 python3 -m http.server
