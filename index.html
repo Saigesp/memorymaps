@@ -57,25 +57,25 @@
     <body>        
         <div id="app" class="main">
             <div class="overmap">
-                <div class="sidebar left" :class="{active: sidebaropen == 'left'}">
+                <aside class="sidebar left" :class="{active: sidebaropen == 'left'}">
                     <div class="sidebar-wrap">
                         ola
                     </div>
-                </div>
-                <div class="sidebar right" :class="{active: sidebaropen == 'right'}">
+                </aside>
+                <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
                     <div class="sidebar-wrap">
                         adios
                     </div>
-                </div>
+                </aside>
                 
                 <div class="overmask" :class="{active: sidebaropen}" @click="sidebaropen = ''"></div>
 
-                <div class="content left">
+                <nav class="content left">
                     <div class="menu" @click="sidebaropen = 'left'">Proyecto</div>
-                </div>
-                <div class="content right">
+                </nav>
+                <nav class="content right">
                     <div class="menu" @click="sidebaropen = 'right'">menu</div>
-                </div>
+                </nav>
 
             </div>
             <d3vuemap-points :lat="lat" :lng="lng" :zoom="zoom"></d3vuemap-points>
