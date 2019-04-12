@@ -4,6 +4,7 @@
             "id": "feminismo",
             "title": "Memoria de nosotras",
             "subtitle": "Lugares de genealogía feminista de Madrid",
+            "text": "Un hilo morado recorre las calles de Madrid. Teje una memoria del dolor y una memoria luminosa: la memoria de la opresión de las mujeres, y la de sus conquistas. Una memoria que no sale en los libros, que se oculta en las placas de las calles, que es silenciada por la historia oficial y también por fenómenos como el turismo o el urbanismo. Pero que permanece en nuestros cuerpos, en nuestras voces, en los relatos que han ido trenzando entre sí a las generaciones. Décadas de lucha han recordado al mundo que la calle es nuestra, y cuando la paseamos nos acompaña toda una genealogía de mujeres que nos van contando, cómplices, la Historia demasiado secreta de sus llantos y de sus cantos.",
             "illustrator": "Bea Luc",
             "items": [
                 {
@@ -26,6 +27,27 @@
                     "desc": "La represión política del franquismo se sumaba en el caso de las mujeres a la opresión patriarcal estructural que el régimen se ocupó de usar también a su favor. En la inmediata posguerra española, el Ministerio de Justicia y la Iglesia Católica unieron sus fuerzas para adoctrinar a la juventud femenina con el objetivo –imprescindible para el modo de vida defendido por el franquismo– de mantener a las mujeres sometidas y relegadas socialmente. Desde 1941, el <strong>Patronato de Protección a la Mujer y la Obra de redención de mujeres caídas</strong>, bajo la presidencia de la propia Carmen Polo, esposa de Franco, se encargaron de «velar por la moralidad pública» a base de «redimir a las mujeres caídas o en riesgo de caer». Una cárcel moralista para prostitutas, madres solteras, lesbianas, víctimas de abusos sexuales, chicas «rebeldes» a la autoridad paterna… Con sede central en Madrid y una red de sucursales en todo el país, era el núcleo de un entramado de control social en el que colaboraban cuerpos de seguridad del Estado, órdenes religiosas y autoridades civiles.",
                     "latitude": 40.4348115,
                     "longitude": -3.6793389
+                },
+                {
+                    "id": "f04",
+                    "name": "Tabacalera",
+                    "desc": "Cualquier día de estos, cuando alguna militante salga a fumar en un descanso de alguna de las muchas asambleas que acoge el centro social <strong>Tabacalera</strong>, se le va a aparecer el fantasma de alguna de las cigarreras que dejaron buena parte de sus vidas allí desde 1809, cuando abrió como Real Fábrica de Tabacos y Rapé. Hasta 3.000 mujeres llegaron a trabajar en este espacio, heredando su plaza de madres a hijas. Ya en el siglo XIX crearon una especie de guarderías dentro de la propia fábrica, para atender a sus hijos e hijas y poder desempeñar a la vez su trabajo. Es conocido el motín de 1885 donde se levantaron al grito de «¡Arriba, niñas!» para protestar contra la posibilidad de que la automatización del proceso de elaboración del tabaco las dejase sin empleo. Ellas se han convertido en todo un símbolo de las luchas obreras, pero otros oficios femeninos como el de las lavanderas, las modistillas y las planchadoras también fueron espacio de algunas de las primeras reivindicaciones laborales, adelantadas a su tiempo.",
+                    "latitude": 40.4061787,
+                    "longitude": -3.7029683
+                },
+                {
+                    "id": "f05",
+                    "name": "Induyco",
+                    "desc": "En la historia del movimiento obrero madrileño las mujeres tuvieron un gran protagonismo, aunque no siempre se las recuerde tanto como a sus compañeros. Frente a la voluntad del régimen de relegarlas al rol de ángeles del hogar, la realidad económica las llevaba a talleres y fábricas. <strong>Induyco</strong>, la empresa más importante del sector textil en Madrid, contrató desde su creación en 1941 a multitud de mujeres jóvenes que se adaptaban a duros ritmos de trabajo por salarios de miseria. En 1976, protagonizaron una gran huelga en la que se reivindicaba una revisión del convenio laboral, un incremento salarial, y derechos sociales como el acceso a la seguridad social o la creación de comedores y guarderías. Durante meses, cada mañana más de trescientas mujeres se reunían en asamblea ante las puertas de la fábrica y resistían las cargas de los grises. Presionadas por sus jefes pero también por sus familias, encontraron sin embargo la solidaridad de la clase trabajadora de toda la ciudad, convirtiéndose en un símbolo. En 2012, <strong>Induyco</strong> fue adquirida por El Corte Inglés, que hoy sigue sometiendo a sus trabajadoras a condiciones de precariedad que recuerdan que las razones de la lucha están lejos de desaparecer.",
+                    "latitude": 40.3954522,
+                    "longitude": -3.6902375
+                },
+                {
+                    "id": "f06",
+                    "name": "Convento de La Latina",
+                    "desc": "Las puertas del <strong>convento de La Latina</strong>, construido en 1499, custodian la historia de una mujer fuerte. Se trata de Beatriz Galindo, su fundadora, que fue la humanista más importante de la corte de Isabel la Católica y exponente de un humanismo laico que en algunos casos tuvo que servirse de la religión para acceder a la educación. El edificio actual no es el original, que fue derribado para ensanchar la calle Toledo, sino una renovación que data de 1907. Pero sigue siendo simbólico de la participación española en la «querella de las mujeres», un encendido debate intelectual en el que durante varios siglos se discutieron las capacidades de las mujeres para acceder a la cultura y a la sabiduría. Ancestras como ella defendieron con sus obras, con sus escritos y con sus actos su valor intelectual y su sabiduría suficiente para intervenir en la cultura y en la vida social y política.",
+                    "latitude": 40.4116624,
+                    "longitude": -3.7082918
                 }
             ]
         },
