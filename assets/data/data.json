@@ -8,13 +8,17 @@
             "items": [
                 {
                     "id": "01",
-                    "name": "Lorem namun pum cum",
-                    "desc": "Non nulla esse ea cupidatat elit velit duis proident ea ea ex nisi sit minim quis ad fugiat ex."
+                    "name": "Cárcel de Yeserías",
+                    "desc": "Si la dictadura franquista pudo sostenerse durante cuarenta años, fue gracias a la represión ejercida por diversas vías. Cuando pensamos en detenciones y encarcelamiento por motivos políticos, también estamos hablando de mujeres, que además de sufrir torturas de marcado carácter sexista, podían entrar en prisión por un abanico de motivos más amplio, que incluía los «delitos contra las personas» (aborto, infanticidio) o «contra la honestidad» (prostitución). La <strong>cárcel de Yeserías</strong> fue desde 1939 una de las dedicadas por el franquismo a los presos políticos, aunque más adelante cumpliría la función de hospital penitenciario. Finalmente, en 1969 se convierte en prisión de mujeres, uso que tendrá hasta 1991. Su patio conoció los pasos de presas como Eva Forest, Lidia Falcón o Rosa María García, entre los de muchas otras, conocidas y anónimas, condenadas por los llamados «delitos específicos de las mujeres». Las otras grandes cárceles de mujeres de Madrid fueron la de Ventas y la de Alcalá de Henares, en las que, además de la privación de libertad, la falta de comida y agua y las condiciones deplorables minaron la salud de estas mujeres y la de las hijas e hijos que convivían con ellas."
+                    "lat": 40.3960422,
+                    "lng": -3.6927495
                 },
                 {
                     "id": "02",
-                    "name": "Fistrum lars Ice",
-                    "desc": "Lorem ipsum in aliqua ad excepteur est elit est nisi ut nisi laboris duis excepteur labore excepteur do cupidatat anim eu laborum exercitation enim aute consequat sunt voluptate dolor consequat quis dolor culpa dolore tempor in ex minim duis voluptate eiusmod."
+                    "name": "Cementerio del Este",
+                    "desc": "«Que mi nombre no se borre de la historia», escribió Julia Conesa, una joven de 19 años, en su última carta a su familia, la madrugada del 5 de agosto de 1939. Era una de las Trece Rosas, condenadas a muerte por un Consejo de Guerra bajo la acusación de un delito de «adhesión a la rebelión» por su lucha contra el fascismo durante la Guerra Civil. Su historia es conocida, pero son parte de una más grande: la de las «sacas» (fusilamientos de presos) uno de los métodos más crudos de la represión de la posguerra. Están documentados 84 casos de mujeres que fueron recogidas por camiones en la vecina cárcel de Ventas, para ser asesinadas en mitad de la noche en las tapias del <strong>cementerio del Este</strong> —aunque se considera probable que haya muchos más."
+                    "lat": 40.4182071,
+                    "lng": -3.6487767
                 }
             ]
         },
@@ -24,6 +28,20 @@
             "subtitle": "Lugares de represión y resistencia antifranquista en Madrid (1940 - 1977)",
             "illustrator": "Miguel Brieva",
             "items": [
+                {
+                    "id": "01",
+                    "name": "Cárcel de Carabanchel",
+                    "desc": "<strong>Yeserías, Ventas, Porlier, Torijos, Toreno, Barco,</strong> son algunos de los nombres de la tupida red de cárceles que cubría Madrid durante la posguerra. Una de las más representativas fue la Prisión Provincial de Madrid, más conocida como <strong>cárcel de Carabanchel.</strong> Construida entre 1940 y 1944 por unos 1000 presos condenados a trabajos forzados, se convertiría en escenario de los motines de la Coordinadora de Presos en Lucha, como el de 1977, cuando mil reclusos se encaramaron a los tejados de la prisión para pedir una reforma del Código Penal. Esta prisión funcionó durante más de medio siglo, hasta 1998. En 2008 fue demolida, desoyendo distintas reivindicaciones vecinales y ciudadanas que presentaron varias propuestas para su cambio de uso. Pero, como si un mal augurio atravesara el lugar, el único de sus edificios que permanece en pie vuelve a tener un uso represivo: es un Centro de Internamiento de Extranjeros (CIE), en el que, de nuevo, se priva de libertad a personas que no han cometido ningún delito."
+                    "lat": 40.3815,
+                    "lng": -3.7553
+                },
+                {
+                    "id": "02",
+                    "name": "Cementerio del Este",
+                    "desc": "Entre 1939 y 1944 casi 3000 personas fueron asesinadas por el franquismo. Buena parte de ellas, fusiladas contra las tapias del <strong>Cementerio del Este</strong>. Quienes habían escuchado su nombre como parte de una diligencia de ejecución eran trasladados a las cárceles de Porlier (los hombres) o Ventas (las mujeres), desde donde un piquete de militares o guardias civiles los trasladaba en camiones, en mitad de la noche, hasta el lugar de su muerte. Antes de que el día siguiente acabara, habrían sido enterrados allí mismo, en fosas comunes o «tumbas de cuarta». Entre quienes corrieron esta suerte estuvieron las Trece Rosas, que hoy dan nombre a la avenida contigua al cementerio."
+                    "lat": 40.4187164,
+                    "lng": -3.6489375
+                }
             ]
         },
         {
@@ -38,7 +56,7 @@
             "id": "orgullo",
             "title": "Memoria de orgullo",
             "subtitle": "Ruta por lugares históricos de lucha y deseo LGTBI de Madrid",
-            "illustrator": "",
+            "illustrator": "Marta Horcas Fernández",
             "items": [
             ]
         },
