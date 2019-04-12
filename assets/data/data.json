@@ -1,0 +1,54 @@
+{
+    "maps": [
+        {
+            "id": "feminismo",
+            "title": "Memoria de nosotras",
+            "subtitle": "Lugares de genealogía feminista de Madrid",
+            "illustrator": "Bea Luc",
+            "items": [
+                {
+                    "id": "01",
+                    "name": "Lorem namun pum cum",
+                    "desc": "Non nulla esse ea cupidatat elit velit duis proident ea ea ex nisi sit minim quis ad fugiat ex."
+                },
+                {
+                    "id": "02",
+                    "name": "Fistrum lars Ice",
+                    "desc": "Lorem ipsum in aliqua ad excepteur est elit est nisi ut nisi laboris duis excepteur labore excepteur do cupidatat anim eu laborum exercitation enim aute consequat sunt voluptate dolor consequat quis dolor culpa dolore tempor in ex minim duis voluptate eiusmod."
+                }
+            ]
+        },
+        {
+            "id": "democracia",
+            "title": "Memoria de lucha democrática",
+            "subtitle": "Lugares de represión y resistencia antifranquista en Madrid (1940 - 1977)",
+            "illustrator": "Miguel Brieva",
+            "items": [
+            ]
+        },
+        {
+            "id": "estudiantes",
+            "title": "Memoria de lucha estudiantil",
+            "subtitle": "Lugares de movilización y rebeldía dentro y fuera de las aulas",
+            "illustrator": "JR Mora",
+            "items": [
+            ]
+        },
+        {
+            "id": "orgullo",
+            "title": "Memoria de orgullo",
+            "subtitle": "Ruta por lugares históricos de lucha y deseo LGTBI de Madrid",
+            "illustrator": "",
+            "items": [
+            ]
+        },
+        {
+            "id": "vecinos",
+            "title": "Memoria de barrio",
+            "subtitle": "Lugares de lucha y construcción del movimiento vecinal",
+            "illustrator": "Enrique Flores",
+            "items": [
+            ]
+        }
+    ]
+}
