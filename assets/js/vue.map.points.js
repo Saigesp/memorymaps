@@ -28,7 +28,6 @@ Vue.component('d3vuemap-points', {
     },
     watch: {
         points: function(val){
-            //console.log('d3vuemap addpoints', val);
             this.map.loadPoints(this.points);
         }
     }
