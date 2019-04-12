@@ -4,14 +4,11 @@ class D3MapPoints extends D3Map  {
         super(selection, data, config)
         this.circles = {};
         this.cfg.circlesize = 12;
-        this.colorScale = d3.scaleSequential(d3.interpolateViridis)
     }
 
     loadPoints(points){
         var self = this;
         var tdata = {};
-
-        this.colorScale.domain([0 , d3.mean(points, (d)=>{ return d.reviews })*2]);
 
         // comprobamos puntos locales
         self.data.forEach(function(d){
@@ -34,7 +31,7 @@ class D3MapPoints extends D3Map  {
                 // puntos a crear
                 var lnglat = new L.LatLng(+d.latitude, +d.longitude);
                 var circle = new L.circle((lnglat), self.cfg.circlesize, {
-                    color: self.colorScale(+d.reviews),
+                    color: d.color,
                     opacity:1,
                     fillOpacity:.5,
                     className: 'point id-'+d.id,
