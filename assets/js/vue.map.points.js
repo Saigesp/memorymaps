@@ -22,9 +22,13 @@ Vue.component('d3vuemap-points', {
             EventBus.$emit('map_move', data);
         })
 
+        EventBus.$on('addpoints', (data)=>{
+            self.points = data;
+        })
     },
     watch: {
         points: function(val){
+            //console.log('d3vuemap addpoints', val);
             this.map.loadPoints(this.points);
         }
     }

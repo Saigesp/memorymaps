@@ -8,6 +8,7 @@ class D3MapPoints extends D3Map  {
     }
 
     loadPoints(points){
+        console.log('d3.map loadPoints', points);
         var self = this;
         var tdata = {};
 

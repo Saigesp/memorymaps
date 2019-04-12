@@ -107,6 +107,15 @@
                 self.zoom = data.zoom;
             });
         },
+        mounted: function(){
+            var points = []
+            d3.json('assets/data/data.json').then(function(data){
+                data.maps.forEach(function(map){
+                    points = points.concat(map.items);
+                })
+                EventBus.$emit('addpoints', points);
+            })
+        },
         watch: {
             lat: function(val) { updateQueryStringParam('lat', val); },
             lng: function(val) { updateQueryStringParam('lng', val); },
