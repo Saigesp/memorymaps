@@ -13,7 +13,7 @@ class D3Map {
             'lat': 0,
             'lng': 0,
             'zoom': 16,
-            'tileprovider': 'Stamen.Watercolor',
+            'tileprovider': 'CartoDB.Positron',
         };
         Object.keys(config).forEach(function(key) {
             if(config[key] instanceof Object && config[key] instanceof Array === false){
