@@ -9,6 +9,7 @@
             "items": [
                 {
                     "id": "f01",
+                    "color": "#aa15b5",
                     "name": "Cárcel de Yeserías",
                     "desc": "Si la dictadura franquista pudo sostenerse durante cuarenta años, fue gracias a la represión ejercida por diversas vías. Cuando pensamos en detenciones y encarcelamiento por motivos políticos, también estamos hablando de mujeres, que además de sufrir torturas de marcado carácter sexista, podían entrar en prisión por un abanico de motivos más amplio, que incluía los «delitos contra las personas» (aborto, infanticidio) o «contra la honestidad» (prostitución). La <strong>cárcel de Yeserías</strong> fue desde 1939 una de las dedicadas por el franquismo a los presos políticos, aunque más adelante cumpliría la función de hospital penitenciario. Finalmente, en 1969 se convierte en prisión de mujeres, uso que tendrá hasta 1991. Su patio conoció los pasos de presas como Eva Forest, Lidia Falcón o Rosa María García, entre los de muchas otras, conocidas y anónimas, condenadas por los llamados «delitos específicos de las mujeres». Las otras grandes cárceles de mujeres de Madrid fueron la de Ventas y la de Alcalá de Henares, en las que, además de la privación de libertad, la falta de comida y agua y las condiciones deplorables minaron la salud de estas mujeres y la de las hijas e hijos que convivían con ellas.",
                     "latitude": 40.3960422,
@@ -16,6 +17,7 @@
                 },
                 {
                     "id": "f02",
+                    "color": "#aa15b5",
                     "name": "Cementerio del Este",
                     "desc": "«Que mi nombre no se borre de la historia», escribió Julia Conesa, una joven de 19 años, en su última carta a su familia, la madrugada del 5 de agosto de 1939. Era una de las Trece Rosas, condenadas a muerte por un Consejo de Guerra bajo la acusación de un delito de «adhesión a la rebelión» por su lucha contra el fascismo durante la Guerra Civil. Su historia es conocida, pero son parte de una más grande: la de las «sacas» (fusilamientos de presos) uno de los métodos más crudos de la represión de la posguerra. Están documentados 84 casos de mujeres que fueron recogidas por camiones en la vecina cárcel de Ventas, para ser asesinadas en mitad de la noche en las tapias del <strong>cementerio del Este</strong> —aunque se considera probable que haya muchos más.",
                     "latitude": 40.4182071,
@@ -23,6 +25,7 @@
                 },
                 {
                     "id": "f03",
+                    "color": "#aa15b5",
                     "name": "Patronato de Protección a la Mujer y la Obra de redención de mujeres caídas",
                     "desc": "La represión política del franquismo se sumaba en el caso de las mujeres a la opresión patriarcal estructural que el régimen se ocupó de usar también a su favor. En la inmediata posguerra española, el Ministerio de Justicia y la Iglesia Católica unieron sus fuerzas para adoctrinar a la juventud femenina con el objetivo –imprescindible para el modo de vida defendido por el franquismo– de mantener a las mujeres sometidas y relegadas socialmente. Desde 1941, el <strong>Patronato de Protección a la Mujer y la Obra de redención de mujeres caídas</strong>, bajo la presidencia de la propia Carmen Polo, esposa de Franco, se encargaron de «velar por la moralidad pública» a base de «redimir a las mujeres caídas o en riesgo de caer». Una cárcel moralista para prostitutas, madres solteras, lesbianas, víctimas de abusos sexuales, chicas «rebeldes» a la autoridad paterna… Con sede central en Madrid y una red de sucursales en todo el país, era el núcleo de un entramado de control social en el que colaboraban cuerpos de seguridad del Estado, órdenes religiosas y autoridades civiles.",
                     "latitude": 40.4348115,
@@ -30,6 +33,7 @@
                 },
                 {
                     "id": "f04",
+                    "color": "#aa15b5",
                     "name": "Tabacalera",
                     "desc": "Cualquier día de estos, cuando alguna militante salga a fumar en un descanso de alguna de las muchas asambleas que acoge el centro social <strong>Tabacalera</strong>, se le va a aparecer el fantasma de alguna de las cigarreras que dejaron buena parte de sus vidas allí desde 1809, cuando abrió como Real Fábrica de Tabacos y Rapé. Hasta 3.000 mujeres llegaron a trabajar en este espacio, heredando su plaza de madres a hijas. Ya en el siglo XIX crearon una especie de guarderías dentro de la propia fábrica, para atender a sus hijos e hijas y poder desempeñar a la vez su trabajo. Es conocido el motín de 1885 donde se levantaron al grito de «¡Arriba, niñas!» para protestar contra la posibilidad de que la automatización del proceso de elaboración del tabaco las dejase sin empleo. Ellas se han convertido en todo un símbolo de las luchas obreras, pero otros oficios femeninos como el de las lavanderas, las modistillas y las planchadoras también fueron espacio de algunas de las primeras reivindicaciones laborales, adelantadas a su tiempo.",
                     "latitude": 40.4061787,
@@ -37,6 +41,7 @@
                 },
                 {
                     "id": "f05",
+                    "color": "#aa15b5",
                     "name": "Induyco",
                     "desc": "En la historia del movimiento obrero madrileño las mujeres tuvieron un gran protagonismo, aunque no siempre se las recuerde tanto como a sus compañeros. Frente a la voluntad del régimen de relegarlas al rol de ángeles del hogar, la realidad económica las llevaba a talleres y fábricas. <strong>Induyco</strong>, la empresa más importante del sector textil en Madrid, contrató desde su creación en 1941 a multitud de mujeres jóvenes que se adaptaban a duros ritmos de trabajo por salarios de miseria. En 1976, protagonizaron una gran huelga en la que se reivindicaba una revisión del convenio laboral, un incremento salarial, y derechos sociales como el acceso a la seguridad social o la creación de comedores y guarderías. Durante meses, cada mañana más de trescientas mujeres se reunían en asamblea ante las puertas de la fábrica y resistían las cargas de los grises. Presionadas por sus jefes pero también por sus familias, encontraron sin embargo la solidaridad de la clase trabajadora de toda la ciudad, convirtiéndose en un símbolo. En 2012, <strong>Induyco</strong> fue adquirida por El Corte Inglés, que hoy sigue sometiendo a sus trabajadoras a condiciones de precariedad que recuerdan que las razones de la lucha están lejos de desaparecer.",
                     "latitude": 40.3954522,
@@ -44,6 +49,7 @@
                 },
                 {
                     "id": "f06",
+                    "color": "#aa15b5",
                     "name": "Convento de La Latina",
                     "desc": "Las puertas del <strong>convento de La Latina</strong>, construido en 1499, custodian la historia de una mujer fuerte. Se trata de Beatriz Galindo, su fundadora, que fue la humanista más importante de la corte de Isabel la Católica y exponente de un humanismo laico que en algunos casos tuvo que servirse de la religión para acceder a la educación. El edificio actual no es el original, que fue derribado para ensanchar la calle Toledo, sino una renovación que data de 1907. Pero sigue siendo simbólico de la participación española en la «querella de las mujeres», un encendido debate intelectual en el que durante varios siglos se discutieron las capacidades de las mujeres para acceder a la cultura y a la sabiduría. Ancestras como ella defendieron con sus obras, con sus escritos y con sus actos su valor intelectual y su sabiduría suficiente para intervenir en la cultura y en la vida social y política.",
                     "latitude": 40.4116624,
@@ -51,6 +57,7 @@
                 },
                 {
                     "id": "f07",
+                    "color": "#aa15b5",
                     "name": "Residencia de Señoritas + Instituto internacional",
                     "desc": "Dirigida por la pedagoga María de Maeztu desde su fundación en 1915, la <strong>Residencia de Señoritas</strong> fue el primer centro oficial destinado a fomentar el acceso a la Universidad de las mujeres (aprobado cinco años antes). El centro dejó de funcionar en 1939, tras la Guerra Civil. Desde su apertura, su éxito fue enorme: si en 1915 había 13 estudiantes, en el curso 1931-32, ya eran 1.000. Victoria Kent, Matilde Huici, Delhy Tejero o Josefina Carabias fueron algunas de sus residentes más destacadas. María Goyri, María Zambrano, Victorina Durán o Maruja Mallo formaron parte de su profesorado. Zenobia Camprubí, Gabriela Mistral, Victoria Ocampo, María Martínez Sierra, Clara Campoamor o Concha Méndez participaron en sus actividades. Muy cerca de la Residencia estaba el <strong>International Institute</strong>, organismo estadounidense con el que la Residencia de Señoritas mantuvo una constante relación y que contribuyó a su desarrollo mediante la colaboración tanto material como humana. Gloria Fuertes fue durante muchos años su bibliotecaria.",
                     "latitude": 40.4348582,
@@ -58,6 +65,7 @@
                 },
                 {
                     "id": "f08",
+                    "color": "#aa15b5",
                     "name": "Colegio Carmen Rojo",
                     "desc": "Los nombres que vemos en la ciudad esconden a menudo otros que nos han sido hurtados. El actual Colegio Fernando el Católico se llamó antes <strong>Colegio Carmen Rojo</strong>, en honor a la escritora y pedagoga que fundó y dirigió la Escuela Normal de Maestras de Madrid, que marcó el acceso de las mujeres a la docencia. No es el único: son muchos más los colegios que durante la República recibieron el nombre de mujeres que el franquismo borró, no fueran a convertirse en un modelo. La nueva denominación debía «responder plenamente a los ideales del Movimiento Nacional» y evitar «nombres peligrosos», decía el decreto que vino a cambiarlos. Sigue siendo una tarea pendiente el investigar este borrado y volver a llamar a los lugares por su nombre.",
                     "latitude": 40.4340583,
@@ -65,6 +73,7 @@
                 },
                 {
                     "id": "f09",
+                    "color": "#aa15b5",
                     "name": "Espacios de reunión",
                     "desc": "Además de cuartos propios, las mujeres siempre hemos necesitado también salones compartidos donde poder encontrarnos. Cada época tiene los suyos. Así, por ejemplo, en 1926 nació el <strong>Lyceum Club</strong>, rama española de una federación internacional de mujeres de ámbitos ilustrados que contribuyó a desarrollar su actividad económica, científica y artística. En los años 70 fue el turno del local del <strong>44 de la calle Barquillo</strong>, que acogió durante más de 35 años a un centenar de colectivos, convirtiéndose en clave de la articulación unitaria del movimiento feminista madrileño. Los 90 serían el tiempo de la <strong>Eskalera Karakola</strong>, una okupa solo para mujeres, laboratorio de pensamiento y formas de vida que se abrió a conceptos como lo queer, el transfeminismo o los feminismos del sur. Hoy siguen siendo muchos los espacios que recogen sus testigos y siguen albergando el trabajo, las celebraciones y las complicidades de la lucha.",
                     "latitude": 40.4243105,
@@ -72,6 +81,7 @@
                 },
                 {
                     "id": "f10",
+                    "color": "#aa15b5",
                     "name": "Librería de Mujeres",
                     "desc": "La palabra, la voz pública, ha sido uno de los elementos históricamente negados a las mujeres, porque bien sabía el poder que acceder a ella era el primer paso para muchas otras conquistas. Por eso, recuperar y divulgar la obra de autoras ha sido clave para el feminismo. Como santuario de este empeño nació en 1978, en el espacio de una antigua carbonería, la <strong>Librería de Mujeres</strong>. Primera de este tipo en España, se fundó como cooperativa siguiendo el ejemplo de las que ya existían en otras ciudades europeas, en un momento muy activo para el movimiento feminista, en el que proliferaban los colectivos, las movilizaciones, las comisiones de mujeres dentro de las organizaciones… Estas estanterías dieron muchas herramientas para todo ello, y plantaron una semilla que hoy sigue creciendo en otras librerías feministas, como <strong>Mujeres y Compañía</strong>, o dedicadas a los temas LGTBI, como <strong>Berkana.</strong>",
                     "latitude": 40.4153721,
@@ -79,6 +89,7 @@
                 },
                 {
                     "id": "f11",
+                    "color": "#aa15b5",
                     "name": "Primer Punto Morado",
                     "desc": "Durante mucho tiempo, las violencias machistas eran invisibles. Luego, empezaron a nombrarse, pero quedando circunscritas al ámbito doméstico y de las relaciones de pareja. Hoy van comprendiéndose en su complejidad, como fenómeno estructural que se da en todos los ámbitos. Los puntos morados son lugares donde informarse sobre cómo evitar las agresiones machistas, espacios seguros a los que acudir ante cualquier problema. El primero que se organizó fue en la <strong>plaza Nelson Mandela</strong> en el barrio de Lavapiés. La iniciativa se extendió, y ya no hay fiesta que no cuente con una de estas brigadas de compañeras con brazalete morado que nos ayudan a todas a sentir efectivamente que la calle y la noche son nuestras. Un ejemplo de mutuo apoyo, pedagogía, empoderamiento, así como de todo un cambio de paradigma en la concepción de qué es la violencia y cómo nos afecta.",
                     "latitude": 40.4096972,
@@ -86,6 +97,7 @@
                 },
                 {
                     "id": "f12",
+                    "color": "#aa15b5",
                     "name": "Plazas de Sol y de Jacinto Benavente",
                     "desc": "Aunque mucho del trabajo del movimiento feminista transcurre con constancia y sin ser visto… ¿A quién no le gusta una buena movilización? Hitos como la manifestación anual del 8 de marzo han sido claves para articular al movimiento y han atravesado su trabajo, como laboratorio de alianzas y como muestra de fuerza. Durante muchos años, desde los 80, la <strong>plaza de Jacinto Benavente</strong> era el escenario de esta manifestación, aunque a partir de 2013 se fue extendiendo hasta llegar a ocupar todo el centro de la ciudad en la Huelga Feminista de 2018. Muy cerca de allí, la <strong>plaza de Sol</strong> también recuerda otro hito: la pancarta que le hizo saber al 15M que «la revolución será feminista o no será», punto de partida de una comisión de trabajo que se dispuso a contagiar de feminismo al movimiento entero, demostrando que el tiempo de relegar las nuestras a «luchas secundarias» ha pasado para no volver.",
                     "latitude": 40.4144917,
@@ -93,6 +105,7 @@
                 },
                 {
                     "id": "f13",
+                    "color": "#aa15b5",
                     "name": "La Audiencia Nacional",
                     "desc": "El cuerpo de las mujeres es blanco de toda clase de juicios. Pero algunos, lo son literalmente. <strong>La Audiencia Nacional</strong> fue el escenario del horror para muchas mujeres procesadas y condenadas por el delito de decidir qué hacer con sus vidas: en este caso, abortar. La lucha por los derechos sexuales y reproductivos se convirtió en un eje central para el feminismo desde los años 70. Aunque en 1982 se legisló para una despenalización parcial, no era suficiente: no se podía castigar nuestra decisión de no ser madres, por eso se pedía que el aborto saliera del Código Penal. Lo mismo ocurrió con la ley de plazos de 2011. En esos años se intensifican las movilizaciones por el derecho a decidir, ante la voluntad del Gobierno de legislar, que culmina en la ley de plazos de 1985. Mientras, los centros de planificación familiar, cada vez más numerosos, realizaban también un importante trabajo asistencial proporcionando a las mujeres acceso a una de las llaves para el control de sus cuerpos: los anticonceptivos. Cuando la presión de las mujeres consiguió en 2014 que Alberto Ruiz Gallardón, entonces ministro de Justicia, dimitiera tras intentar una legislación regresiva, comprobamos que éramos capaces de mucho más de lo que esperaban. Hoy, al hilo de la jurisprudencia sobre las agresiones sexuales, seguimos manifestándonos ante las instituciones de una Justicia Patriarcal que ya está tardando en ponerse las gafas violetas.",
                     "latitude": 40.4249502,
@@ -100,6 +113,7 @@
                 },
                 {
                     "id": "f14",
+                    "color": "#aa15b5",
                     "name": "La Osa y el Madroño",
                     "desc": "El 23 de enero de 1987, <strong>la osa que vive a la sombra del madroño</strong> de la plaza del Sol se vio de pronto rodeada por una ola de deseo libre. Más de cien mujeres se besaban bajo el sonido de las charangas, en un acto de protesta ante la detención unos días antes de una pareja de mujeres por juntar sus labios en público en esa misma plaza. Esta primera besada había sido convocada por el Colectivo de Feministas Lesbianas de Madrid, fundado en 1981 como espacio de lucha propio ante la misoginia que se vivía en los grupos homosexuales mixtos, y la poca representatividad que se sentía dentro del colectivo feminista. Desde entonces hasta nuestros días ha habido muchas más besadas, pero sobre todo, muchos más besos libres; y la lucha LGTBI sigue muy viva con multitud de colectivos específicos que mantienen al mismo tiempo una agenda y un discurso cada vez más imbricado con el del movimiento feminista.",
                     "latitude": 40.4169432,
@@ -107,6 +121,7 @@
                 },
                 {
                     "id": "f15",
+                    "color": "#aa15b5",
                     "name": "Congreso de los Diputados",
                     "desc": "<strong>El Congreso de los Diputados</strong> sigue teniendo, hoy, de entre sus muchas salas, solo una que lleve nombre de mujer. Es el de Clara Campoamor, la primera que habló al país desde su tribuna. Fue el 1 de octubre de 1931, en defensa del sufragio femenino, tras la paradoja de unas elecciones en las que las mujeres no podían votar, pero sí ser elegidas. En el hemiciclo, 470 hombres y solo otra mujer, Victoria Kent, que votó en contra de su propuesta. A Campoamor, aquella mañana, le tocó escuchar toda clase de insultos y comentarios que calificó, irónica, de «histerismo masculino». Pero ganó la votación y las mujeres pudieron acudir a las urnas en noviembre de 1933. Y de nuevo le tocó escuchar improperios: como triunfó la derecha, la culpa del giro político se achacó a las mujeres. Un largo exilio, el olvido y la muerte lejos de su país fueron el final de una historia en la que no se oyó demasiado a menudo la palabra «gracias». Hoy, las diputadas constituyen el 40% de esta cámara, y todas gozamos de los derechos políticos que, aunque quede mucho por hacer, garantizan al menos que podamos intentarlo.",
                     "latitude": 40.416406,
@@ -122,6 +137,7 @@
             "items": [
                 {
                     "id": "d01",
+                    "color": "#d63535",
                     "name": "Cárcel de Carabanchel",
                     "desc": "<strong>Yeserías, Ventas, Porlier, Torijos, Toreno, Barco,</strong> son algunos de los nombres de la tupida red de cárceles que cubría Madrid durante la posguerra. Una de las más representativas fue la Prisión Provincial de Madrid, más conocida como <strong>cárcel de Carabanchel.</strong> Construida entre 1940 y 1944 por unos 1000 presos condenados a trabajos forzados, se convertiría en escenario de los motines de la Coordinadora de Presos en Lucha, como el de 1977, cuando mil reclusos se encaramaron a los tejados de la prisión para pedir una reforma del Código Penal. Esta prisión funcionó durante más de medio siglo, hasta 1998. En 2008 fue demolida, desoyendo distintas reivindicaciones vecinales y ciudadanas que presentaron varias propuestas para su cambio de uso. Pero, como si un mal augurio atravesara el lugar, el único de sus edificios que permanece en pie vuelve a tener un uso represivo: es un Centro de Internamiento de Extranjeros (CIE), en el que, de nuevo, se priva de libertad a personas que no han cometido ningún delito.",
                     "latitude": 40.3815,
@@ -129,6 +145,7 @@
                 },
                 {
                     "id": "d02",
+                    "color": "#d63535",
                     "name": "Cementerio del Este",
                     "desc": "Entre 1939 y 1944 casi 3000 personas fueron asesinadas por el franquismo. Buena parte de ellas, fusiladas contra las tapias del <strong>Cementerio del Este</strong>. Quienes habían escuchado su nombre como parte de una diligencia de ejecución eran trasladados a las cárceles de Porlier (los hombres) o Ventas (las mujeres), desde donde un piquete de militares o guardias civiles los trasladaba en camiones, en mitad de la noche, hasta el lugar de su muerte. Antes de que el día siguiente acabara, habrían sido enterrados allí mismo, en fosas comunes o «tumbas de cuarta». Entre quienes corrieron esta suerte estuvieron las Trece Rosas, que hoy dan nombre a la avenida contigua al cementerio.",
                     "latitude": 40.4187164,
