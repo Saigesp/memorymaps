@@ -48,6 +48,27 @@
                     "desc": "Las puertas del <strong>convento de La Latina</strong>, construido en 1499, custodian la historia de una mujer fuerte. Se trata de Beatriz Galindo, su fundadora, que fue la humanista más importante de la corte de Isabel la Católica y exponente de un humanismo laico que en algunos casos tuvo que servirse de la religión para acceder a la educación. El edificio actual no es el original, que fue derribado para ensanchar la calle Toledo, sino una renovación que data de 1907. Pero sigue siendo simbólico de la participación española en la «querella de las mujeres», un encendido debate intelectual en el que durante varios siglos se discutieron las capacidades de las mujeres para acceder a la cultura y a la sabiduría. Ancestras como ella defendieron con sus obras, con sus escritos y con sus actos su valor intelectual y su sabiduría suficiente para intervenir en la cultura y en la vida social y política.",
                     "latitude": 40.4116624,
                     "longitude": -3.7082918
+                },
+                {
+                    "id": "f07",
+                    "name": "Residencia de Señoritas + Instituto internacional",
+                    "desc": "Dirigida por la pedagoga María de Maeztu desde su fundación en 1915, la <strong>Residencia de Señoritas</strong> fue el primer centro oficial destinado a fomentar el acceso a la Universidad de las mujeres (aprobado cinco años antes). El centro dejó de funcionar en 1939, tras la Guerra Civil. Desde su apertura, su éxito fue enorme: si en 1915 había 13 estudiantes, en el curso 1931-32, ya eran 1.000. Victoria Kent, Matilde Huici, Delhy Tejero o Josefina Carabias fueron algunas de sus residentes más destacadas. María Goyri, María Zambrano, Victorina Durán o Maruja Mallo formaron parte de su profesorado. Zenobia Camprubí, Gabriela Mistral, Victoria Ocampo, María Martínez Sierra, Clara Campoamor o Concha Méndez participaron en sus actividades. Muy cerca de la Residencia estaba el <strong>International Institute</strong>, organismo estadounidense con el que la Residencia de Señoritas mantuvo una constante relación y que contribuyó a su desarrollo mediante la colaboración tanto material como humana. Gloria Fuertes fue durante muchos años su bibliotecaria.",
+                    "latitude": 40.4348582,
+                    "longitude": -3.690715
+                },
+                {
+                    "id": "f08",
+                    "name": "Colegio Carmen Rojo",
+                    "desc": "Los nombres que vemos en la ciudad esconden a menudo otros que nos han sido hurtados. El actual Colegio Fernando el Católico se llamó antes <strong>Colegio Carmen Rojo</strong>, en honor a la escritora y pedagoga que fundó y dirigió la Escuela Normal de Maestras de Madrid, que marcó el acceso de las mujeres a la docencia. No es el único: son muchos más los colegios que durante la República recibieron el nombre de mujeres que el franquismo borró, no fueran a convertirse en un modelo. La nueva denominación debía «responder plenamente a los ideales del Movimiento Nacional» y evitar «nombres peligrosos», decía el decreto que vino a cambiarlos. Sigue siendo una tarea pendiente el investigar este borrado y volver a llamar a los lugares por su nombre.",
+                    "latitude": 40.4340583,
+                    "longitude": -3.7091131
+                },
+                {
+                    "id": "f09",
+                    "name": "Espacios de reunión",
+                    "desc": "Además de cuartos propios, las mujeres siempre hemos necesitado también salones compartidos donde poder encontrarnos. Cada época tiene los suyos. Así, por ejemplo, en 1926 nació el <strong>Lyceum Club</strong>, rama española de una federación internacional de mujeres de ámbitos ilustrados que contribuyó a desarrollar su actividad económica, científica y artística. En los años 70 fue el turno del local del <strong>44 de la calle Barquillo</strong>, que acogió durante más de 35 años a un centenar de colectivos, convirtiéndose en clave de la articulación unitaria del movimiento feminista madrileño. Los 90 serían el tiempo de la <strong>Eskalera Karakola</strong>, una okupa solo para mujeres, laboratorio de pensamiento y formas de vida que se abrió a conceptos como lo queer, el transfeminismo o los feminismos del sur. Hoy siguen siendo muchos los espacios que recogen sus testigos y siguen albergando el trabajo, las celebraciones y las complicidades de la lucha.",
+                    "latitude": 40.4243105,
+                    "longitude": -3.6954011
                 }
             ]
         },
