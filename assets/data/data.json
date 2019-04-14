@@ -42,8 +42,8 @@
                 {
                     "id": "f05",
                     "color": "#aa15b5",
-                    "name": "Induyco",
-                    "desc": "En la historia del movimiento obrero madrileño las mujeres tuvieron un gran protagonismo, aunque no siempre se las recuerde tanto como a sus compañeros. Frente a la voluntad del régimen de relegarlas al rol de ángeles del hogar, la realidad económica las llevaba a talleres y fábricas. <strong>Induyco</strong>, la empresa más importante del sector textil en Madrid, contrató desde su creación en 1941 a multitud de mujeres jóvenes que se adaptaban a duros ritmos de trabajo por salarios de miseria. En 1976, protagonizaron una gran huelga en la que se reivindicaba una revisión del convenio laboral, un incremento salarial, y derechos sociales como el acceso a la seguridad social o la creación de comedores y guarderías. Durante meses, cada mañana más de trescientas mujeres se reunían en asamblea ante las puertas de la fábrica y resistían las cargas de los grises. Presionadas por sus jefes pero también por sus familias, encontraron sin embargo la solidaridad de la clase trabajadora de toda la ciudad, convirtiéndose en un símbolo. En 2012, <strong>Induyco</strong> fue adquirida por El Corte Inglés, que hoy sigue sometiendo a sus trabajadoras a condiciones de precariedad que recuerdan que las razones de la lucha están lejos de desaparecer.",
+                    "name": "INDUYCO",
+                    "desc": "En la historia del movimiento obrero madrileño las mujeres tuvieron un gran protagonismo, aunque no siempre se las recuerde tanto como a sus compañeros. Frente a la voluntad del régimen de relegarlas al rol de ángeles del hogar, la realidad económica las llevaba a talleres y fábricas. <strong>INDUYCO</strong>, la empresa más importante del sector textil en Madrid, contrató desde su creación en 1941 a multitud de mujeres jóvenes que se adaptaban a duros ritmos de trabajo por salarios de miseria. En 1976, protagonizaron una gran huelga en la que se reivindicaba una revisión del convenio laboral, un incremento salarial, y derechos sociales como el acceso a la seguridad social o la creación de comedores y guarderías. Durante meses, cada mañana más de trescientas mujeres se reunían en asamblea ante las puertas de la fábrica y resistían las cargas de los grises. Presionadas por sus jefes pero también por sus familias, encontraron sin embargo la solidaridad de la clase trabajadora de toda la ciudad, convirtiéndose en un símbolo. En 2012, <strong>INDUYCO</strong> fue adquirida por El Corte Inglés, que hoy sigue sometiendo a sus trabajadoras a condiciones de precariedad que recuerdan que las razones de la lucha están lejos de desaparecer.",
                     "latitude": 40.3954522,
                     "longitude": -3.6902375
                 },
@@ -150,6 +150,110 @@
                     "desc": "Entre 1939 y 1944 casi 3000 personas fueron asesinadas por el franquismo. Buena parte de ellas, fusiladas contra las tapias del <strong>Cementerio del Este</strong>. Quienes habían escuchado su nombre como parte de una diligencia de ejecución eran trasladados a las cárceles de Porlier (los hombres) o Ventas (las mujeres), desde donde un piquete de militares o guardias civiles los trasladaba en camiones, en mitad de la noche, hasta el lugar de su muerte. Antes de que el día siguiente acabara, habrían sido enterrados allí mismo, en fosas comunes o «tumbas de cuarta». Entre quienes corrieron esta suerte estuvieron las Trece Rosas, que hoy dan nombre a la avenida contigua al cementerio.",
                     "latitude": 40.4187164,
                     "longitude": -3.6489375
+                },
+                {
+                    "id": "d03",
+                    "color": "#d63535",
+                    "name": "Dirección General de Seguridad (DGS)",
+                    "desc": "La dictadura pudo mantenerse durante cuarenta años gracias a un elaborado entramado de represión contra toda disidencia, articulado a través de diversas instituciones. En el centro mismo de la ciudad se encontraba el que fue llamado «Palacio del Terror»: el edificio que hoy alberga la presidencia de la Comunidad de Madrid fue sede de la <strong>Dirección General de Seguridad</strong>, famosa desde el final de la guerra como centro de torturas, con conocidos casos como los del dirigente comunista Julián Grimau, el presidente Lluís Companys, o el dirigente socialista Tomás Centeno. En su sótano estaban los calabozos donde los detenidos por motivos políticos eran interrogados y torturados por la Brigada Político Social, el cuerpo especial de la policía franquista del que formaron parte torturadores como Roberto Conesa o Billy el Niño, que también tenía sus oficinas en esa misma plaza de Sol.",
+                    "latitude": 40.4163531,
+                    "longitude": -3.70371
+                },
+                {
+                    "id": "d04",
+                    "color": "#d63535",
+                    "name": "Patronato de Protección a la Mujer y la Obra de redención de mujeres caídas",
+                    "desc": "En el caso de las mujeres, la represión política venía a sumarse a la opresión patriarcal estructural. Que se mantuvieran en sus roles tradicionales le venía muy bien al régimen, así que Iglesia, Justicia y sistema educativo aunaron esfuerzos para que así fuera. Dos instituciones destacadas por su capacidad de control social fueron el <strong>Patronato de Protección a la Mujer y la Obra de redención de mujeres caídas</strong>, presididas por Carmen Polo. Desde 1941 se convirtió en una cárcel moralista para mujeres que se considerasen «caídas o en riesgo de caer» –prostitutas, madres solteras, lesbianas, víctimas de abusos sexuales, chicas «rebeldes» a la autoridad paterna–, en un intento ejemplarizante de que ninguna otra se saliera de los renglones prescritos.",
+                    "latitude": 40.4344526,
+                    "longitude": -3.6791781
+                },
+                {
+                    "id": "d05",
+                    "color": "#d63535",
+                    "name": "Servicio de Información y Policía Militar (SIPM)",
+                    "desc": "El Servicio de Información Político-Militar (SIPM), creado durante la Guerra Civil por las tropas sublevadas, no desapareció al acabar la guerra, sino que continuó activo, dedicado a controlar las actividades de los líderes republicanos, y a perseguir a quien se opusiera al régimen franquista. A partir de 1941, muchos de sus miembros acabaron siendo parte de la Brigada Político-Social, la policía secreta que cumplió durante la posguerra una función de limpieza política masiva a través de paredones, fosas, patronatos y centros de detención. Su institución hermana fue el <strong>Tribunal de Orden Público</strong>, una instancia judicial dedicada a las conductas que bajo ese régimen dictatorial eran consideradas delitos políticos. En 1977 se suprimió, pero 10 de los 16 jueces que habían tenido una plaza titular en él fueron nombrados posteriormente magistrados de la Audiencia Nacional o del Tribunal Supremo.",
+                    "latitude": 40.4241263,
+                    "longitude": -3.6935428
+                },
+                {
+                    "id": "d06",
+                    "color": "#d63535",
+                    "name": "San Antón Padres Escolapios",
+                    "desc": "Entre 1938 y principios de los años sesenta, más de 200.000 presos cumplieron trabajos forzados en España. En Madrid se dieron sobre todo en el sector de la construcción. Fue el caso del <strong>convento de San Antón</strong>, cuya historia muestra además la connivencia de la Iglesia en estas prácticas. Convertido en cárcel durante la Guerra Civil, en la posguerra se inició su reconstrucción en condiciones infrahumanas hasta su devolución a los Escolapios, que lo usaron como colegio hasta finales de los años 80. Otras construcciones que aún hoy llevan la huella del trabajo esclavo son la <strong>estación de Chamartín</strong> o el <strong>barrio del Pilar</strong>, ambos obra de José Banús, el «promotor inmobiliario del régimen».",
+                    "latitude": 40.4239198,
+                    "longitude": -3.6986276
+                },
+                {
+                    "id": "d07",
+                    "color": "#d63535",
+                    "name": "Sede de Comisiones Obreras",
+                    "desc": "El nuevo imaginario fascista quiso imponer un urbanismo neoimperial, que borrase los testimonios de la resistencia republicana, en un paisaje de la victoria y la revancha. La renovación y especulación inmobiliaria fueron aliadas de este empeño, del que es buen ejemplo el <strong>complejo de Moncloa</strong>. Si la idea de Madrid como ciudad de resistencia se ejemplificaba especialmente en la Ciudad Universitaria como campus de batalla, a pocos metros pasaron a alzarse edificios como el Arco de la Victoria, el Ministerio del Aire, la Junta de Distrito o el Museo de América, que además marcaban el acceso a la ciudad con este monumentalismo característico del régimen.",
+                    "latitude": 40.4233751,
+                    "longitude": -3.7107643
+                },
+                {
+                    "id": "d08",
+                    "color": "#d63535",
+                    "name": "Plaza de la Moncloa",
+                    "desc": "En la lucha contra el franquismo tuvo especial importancia el renacimiento del movimiento obrero desde el nuevo tejido industrial, con grandes movilizaciones y huelgas como las protagonizadas por quienes trabajaban en los polígonos industriales de Julián Camarillo o Méndez Álvaro o en la fábrica textil INDUYCO. Aunque el <strong>sindicato Comisiones Obreras</strong> nace oficialmente en 1976, sus precedentes atraviesan el franquismo desde los años 50, con la táctica del entrismo en los sindicatos verticales, mientras en todo el territorio nacían comisiones espontáneas en los diversos conflictos laborales. Como en una alegoría, así lo refleja la que es aún hoy una de sus sedes principales, que antes lo había sido también del Sindicato Vertical, y que ha conocido toda su historia, desde la clandestinidad hasta nuestros días.",
+                    "latitude": 40.4353009,
+                    "longitude": -3.7189995
+                },
+                {
+                    "id": "d09",
+                    "color": "#d63535",
+                    "name": "Pintadas de La Universidad Complutense",
+                    "desc": "Los muros siempre han dado gritos que vale la pena escuchar. La <strong>Universidad Complutense</strong> había sido un foco importante de resistencia durante la guerra, y lo continuó siendo durante la dictadura. Así lo atestiguan las pintadas de la parte trasera de la Facultad de Filosofía y Letras, que atraviesan el siglo para seguir diciendo «Abajo el fascismo» y «Libertad». Cinco estudiantes fueron detenidos en 1947 por hacerlas, y dos de ellos condenados a trabajos forzados. Hoy, son las únicas que perviven, aunque maltrechas y amenazadas. En 2017, el gobierno del PP en la Comunidad de Madrid declaró el edificio bien de interés cultural, pero se «olvidó» de incluirlas dentro de lo que debía protegerse.",
+                    "latitude": 40.4487722,
+                    "longitude": -3.7305001
+                },
+                {
+                    "id": "d10",
+                    "color": "#d63535",
+                    "name": "Mercado de Olavide",
+                    "desc": "Además de lo que vemos sin reconocerlo, la memoria también viene marcada por lo que no vemos porque ya no está. Como el <strong>mercado de Olavide</strong>, demolido en 1974 en una operación del franquismo para atacar un barrio «afrancesado», precisamente sospechoso por su anti-casticismo, destruyendo uno de sus símbolos. En una explosión tan insegura como polémica, los vecinos vieron volar por los aires su mercado sin que nadie les explicase nada más que la instrucción de cerrar puertas y ventanas desde las siete de la mañana hasta las dos de la tarde.",
+                    "latitude": 40.4327524,
+                    "longitude": -3.7010902
+                },
+                {
+                    "id": "d11",
+                    "color": "#d63535",
+                    "name": "Pozo del Tío Raimundo",
+                    "desc": "Un ejemplo de resistencia desde el territorio y el hábitat fue el <strong>Pozo del Tío Raimundo</strong>, que se fue constituyendo con la llegada de un amplio exilio rural que iba construyendo barrio en lo que era un descampado. Desde los años 50 comienzan los problemas, al sumarse las trabas impuestas por los propietarios de los terrenos y las de los guardias civiles que intentaban en vano detener la construcción de las chabolas que brotaban imparables cada noche. Una figura clave fue la del padre Llanos, un cura rojo que desde 1955 lideró la organización del vecindario y la progresiva consecución de mejoras en su calidad de vida. Hasta 1969, los grises no lograron entrar en el Pozo, una auténtica ciudad con leyes propias.",
+                    "latitude": 40.372409,
+                    "longitude": -3.6597524
+                },
+                {
+                    "id": "d12",
+                    "color": "#d63535",
+                    "name": "Café de la Mezquita",
+                    "desc": "En todos los tiempos, quienes quieren pensar en común y organizarse necesitan espacios cómplices para el encuentro. En Madrid, uno de ellos fue el entonces llamado <strong>Café de la Mezquita</strong> (hoy Cafetería Santander), un lugar habitual de conspiración de intelectuales y estudiantes. En 1956, año de especial actividad del movimiento universitario, allí se gestó un manifiesto a favor de los Derechos Humanos, firmado por 3.000 alumnos y alumnas. El escrito, que se repartió el primer día de febrero, era un llamamiento a la formación de un Congreso Nacional de Estudiantes y un intento de romper el Sindicato Español Universitario fascista.",
+                    "latitude": 40.4276145,
+                    "longitude": -3.6963426
+                },
+                {
+                    "id": "d13",
+                    "color": "#d63535",
+                    "name": "Movilizaciones amnistía",
+                    "desc": "El primer acto público de la oposición tras la muerte de Franco tuvo lugar a finales de 1975 junto a la cárcel de Carabanchel. Los cañones de agua de la policía no lograron acallar los gritos de las mil personas que se reunieron frente a la prisión para reclamar la amnistía de los presos políticos. Esta venía siendo una de las reivindicaciones más movilizadoras desde las sentencias de muerte del Proceso de Burgos en diciembre de 1970. Finalmente, la <strong>ley de Amnistía</strong> se promulgó en octubre de 1977, afectando a un amplio espectro de delitos políticos. Pero la historia da muchas vueltas, y también sus interpretaciones: lo que en su momento significó el éxito y la alegría de ver regresar a casa a los presos, ha vuelto a ponerse en duda en épocas recientes, cuando las luchas por la memoria democrática se encontraron con que su aplicación había dejado, como efecto secundario indeseado, una laguna legal que ahora impide juzgar los crímenes franquistas.",
+                    "latitude": 40.4202967,
+                    "longitude": -3.7057597
+                },
+                {
+                    "id": "d14",
+                    "color": "#d63535",
+                    "name": "Atocha 55",
+                    "desc": "La última semana de enero de 1977 fue una semana negra. En espacio de pocos días fueron asesinados los militantes Arturo Ruiz y Mari Luz Nájera, y tuvo lugar la matanza de <strong>Atocha 55</strong>. Un comando de ultraderecha entró en un despacho de abogados laboralistas y abrió fuego, matando a cinco personas y dejando heridas a otras cuatro. A su entierro asistieron más de 100.000 personas, convirtiéndose de facto en la primera manifestación de la izquierda tras la muerte de Franco, en un momento de pulso entre las movilizaciones civiles y los focos ultras y represalias fascistas, en disputa por definir la deriva del proceso que sería llamado Transición.",
+                    "latitude": 40.4129381,
+                    "longitude": -3.6999638
+                },
+                {
+                    "id": "d15",
+                    "color": "#d63535",
+                    "name": "Congreso de los Diputados",
+                    "desc": "Aún se ven en el techo del <strong>Congreso de los Diputados</strong> los agujeros que dejaron los disparos del teniente coronel Antonio Tejero durante el intento de golpe de Estado del 23 de febrero de 1981. El asalto a las Cortes de un grupo de guardias civiles interrumpió la sesión en la que se votaba la investidura de Leopoldo Calvo Sotelo como presidente del Gobierno. Mientras el legislativo permanecía secuestrado, el capitán general Jaime Milans del Bosch sacó los tanques a la calle y decretó el estado de excepción en Valencia. Aunque el golpe solo duró unas horas, quienes lo vivieron coinciden en el recuerdo de una vivencia: el miedo a volver atrás. Aunque aquella vez no ocurriera, debemos seguir alerta, entendiendo los pasos de la historia para no volver a repetirlos.",
+                    "latitude": 40.4160927,
+                    "longitude": -3.6966869
                 }
             ]
         },
