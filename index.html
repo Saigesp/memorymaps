@@ -77,10 +77,14 @@
                 </div>
 
                 <nav class="content left">
-                    <div class="menu" @click="sidebaropen = 'left'">Proyecto</div>
+                    <div class="menu-wrap">
+                        <div class="menu" @click="sidebaropen = 'left'">Proyecto</div>
+                    </div>
                 </nav>
-                <aside class="content right" style="display: none;">
-                    <div class="menu" @click="sidebaropen = 'right'">menu</div>
+                <aside class="content right">
+                    <div class="menu-wrap">
+                        <div class="menu" @click="sidebaropen = 'right'">Filtros</div>
+                    </div>
                 </aside>
 
                 <main class="content main"  :class="{active: sidebaropen == 'main'}">

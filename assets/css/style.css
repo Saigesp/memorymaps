@@ -280,6 +280,10 @@ html, body {
     opacity: 0.6;
 }
 
+.content.right .menu-wrap {
+    text-align: right;
+}
+
 /* Content main */
 .content.main {
     width: 80%;
@@ -343,6 +347,12 @@ html, body {
     width: 100%;
 }
 .ensigns img {
+}
+
+@media only screen and (min-width: 600px) {
+    .content .menu {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (min-width: 870px) {
