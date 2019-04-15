@@ -207,9 +207,6 @@ html, body {
     background: rgba(68, 68, 68, 0.51);
     pointer-events: all;
 }
-#map {
-
-}
 
 /* SIDEBARS
 
@@ -318,7 +315,9 @@ html, body {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
 }
-.main-wrap::-webkit-scrollbar { width: 0 !important }
+.main-wrap::-webkit-scrollbar {
+    width: 0 !important;
+}
 
 .main-thumb {
     width: 80%;
@@ -349,6 +348,7 @@ html, body {
 .ensigns img {
 }
 
+/* Logos */
 .logos {
     position: absolute;
     bottom: 0;
@@ -361,6 +361,25 @@ html, body {
 .logos img {
     width: 100px;
     height: auto;
+}
+
+/* Filters */
+.filter-list {}
+.filter-item {
+    margin: 10px 0;
+    cursor: pointer;
+}
+.filter-item.inactive {
+    opacity: 0.4;
+}
+.filter-item svg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.filter-item span {
+    vertical-align: middle;
 }
 
 @media only screen and (min-width: 600px) {
@@ -398,4 +417,7 @@ html, body {
     stroke-opacity: 0.8;
     fill-opacity: 0.2;
     pointer-events: all;
+}
+#map .point.inactive {
+    display: none;
 }

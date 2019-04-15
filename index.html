@@ -64,8 +64,13 @@
                 </aside>
                 <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
                     <div class="sidebar-wrap">
-                        <ul>
-                            <li v-for="filter in filters"><span v-html="filter.name"></span></li>
+                        <ul class="filter-list">
+                            <li class="filter-item" :class="{inactive: inactivefilters.includes(filter.class)}" v-for="filter in filters" @click="toggleFilter(filter.class)">
+                                <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="35" :fill="filter.color" :stroke="filter.color" stroke-opacity="1" stroke-width="15" fill-opacity="0.5"/>
+                                </svg>
+                                <span v-html="filter.name"></span>
+                            </li>
                         </ul>
                     </div>
                 </aside>
@@ -124,6 +129,7 @@
             lat: getQueryStringParam('lat') ? getQueryStringParam('lat') : 40.402974,
             lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.706255,
             zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 13,
+            inactivefilters: getQueryStringArray('dn') ? getQueryStringArray('dn') : [],
             sidebaropen: '',
             point: {
                 id: '',
@@ -153,13 +159,31 @@
                     points = points.concat(map.items);
                 })
                 EventBus.$emit('addpoints', points);
+                setTimeout(function(){ self.showFilters(); }, 0);
             })
+        },
+        methods: {
+            toggleFilter(filter){
+                if(filter){
+                    updateQueryStringArray('dn', filter)
+                    var index = this.inactivefilters.indexOf(filter);
+                    if (index > -1) this.inactivefilters.splice(index, 1)
+                    else this.inactivefilters.push(filter)
+                }else this.inactivefilters = [];
+            },
+            showFilters(){
+                d3.selectAll('.point').classed('inactive', false);
+                this.inactivefilters.forEach(function(v){
+                    d3.selectAll('.point.c-'+v).classed('inactive', true);
+                })
+            }
         },
         watch: {
             lat: function(val) { updateQueryStringParam('lat', val); },
             lng: function(val) { updateQueryStringParam('lng', val); },
             zoom: function(val){ updateQueryStringParam('zoom', val); },
-            sidebaropen: function(val){ if(!val) this.point = {}; }
+            sidebaropen: function(val){ if(!val) this.point = {}; },
+            inactivefilters: function(val){ this.showFilters(); },
         }
     });
         
