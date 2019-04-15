@@ -166,11 +166,6 @@ mark, ins {background: transparent; text-decoration: none;}
 .leaflet-gesture-handling-touch-warning:after{content:attr(data-gesture-handling-touch-content)}
 .leaflet-gesture-handling-scroll-warning:after{content:attr(data-gesture-handling-scroll-content)}
 
-.leaflet-top.leaflet-left,
-.leaflet-bottom.leaflet-right {
-    /* display: none;*/
-}
-
 
 
 /* GENERAL
