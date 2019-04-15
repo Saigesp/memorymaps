@@ -37,7 +37,7 @@ class D3MapPoints extends D3Map  {
                     color: d.color,
                     opacity:1,
                     fillOpacity:.5,
-                    className: 'point id-'+d.id,
+                    className: 'point c-'+d.class+' id-'+d.id,
                 })
                 circle.addTo(self.map)
                 circle.on('click', function(){

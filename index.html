@@ -64,7 +64,9 @@
                 </aside>
                 <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
                     <div class="sidebar-wrap">
-                        adios
+                        <ul>
+                            <li v-for="filter in filters"><span v-html="filter.name"></span></li>
+                        </ul>
                     </div>
                 </aside>
                 
@@ -147,7 +149,7 @@
             var points = []
             d3.json('assets/data/data.json').then(function(data){
                 data.maps.forEach(function(map){
-                    self.filters.push(map.id)
+                    self.filters.push({name: map.title, class: map.id, color: map.color})
                     points = points.concat(map.items);
                 })
                 EventBus.$emit('addpoints', points);
