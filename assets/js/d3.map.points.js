@@ -4,6 +4,9 @@ class D3MapPoints extends D3Map  {
         super(selection, data, config)
         this.circles = {};
         this.cfg.circlesize = 50;
+        this.pointevents = {
+            click: ()=>{}
+        }
     }
 
     loadPoints(points){
@@ -37,6 +40,9 @@ class D3MapPoints extends D3Map  {
                     className: 'point id-'+d.id,
                 })
                 circle.addTo(self.map)
+                circle.on('click', function(){
+                    self.pointevents.click(d)
+                })
                 self.circles[d.id] = circle
                 tdata[d.id] = d
             }
@@ -49,5 +55,9 @@ class D3MapPoints extends D3Map  {
             }
         }
 
+    }
+
+    onpoint(listener, fn){
+        this.pointevents[listener] = fn;
     }
 }
