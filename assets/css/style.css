@@ -280,6 +280,42 @@ html, body {
     opacity: 0.6;
 }
 
+/* Content main */
+.content.main {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 100%;
+    z-index: 99;
+    background: #D7F7E3;
+    pointer-events: all;
+    transition: top 200ms ease-in-out;
+}
+.content.main.active {
+    top: 10%;
+}
+.main-wrap {
+    padding: 20px;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.main-wrap::-webkit-scrollbar { width: 0 !important }
+
+.main-thumb {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.main-title {
+    text-align: center;
+}
+.main-body {}
+
+/* Ensigns */
 .ensigns {
     position: absolute;
     top: 0;
@@ -296,80 +332,12 @@ html, body {
 .ensigns img {
 }
 
-/* POPUP
-
-*****************************************/
-/*
-.leaflet-popup-pane .leaflet-popup-content-wrapper {
-    border-radius: 3px;
-    padding: 0;
-    font-size: 12px;
+@media only screen and (min-width: 870px) {
+    .content.main {
+        width: 700px;
+        left: calc(50% - 350px);
+    }
 }
-.leaflet-popup-content {
-    margin: 0 !important;
-}
-.leaflet-popup-content .txt {
-    padding: 15px;
-}
-.leaflet-popup-content img {
-    width: 100%;
-    height: auto;
-}
-.leaflet-popup-content .txt .address {
-    opacity: 0.4;
-}
-.leaflet-popup-content .txt .prepar{
-    color: white;
-    background: #B30000;
-    padding: 2px 3px;
-    font-size: 10px;
-    border-radius: 3px;
-    line-height: 1.9;
-}
-.leaflet-popup-content .description .cont {
-    display: none;
-}
-.leaflet-popup-content .txt .showmore {
-}
-.leaflet-popup-content .txt .showmore > span {
-    cursor: pointer;
-    color: #29a58d;
-}
-.leaflet-popup-content .description.is-expanded .showmore-more {
-    display: none;
-}
-.leaflet-popup-content .description .showmore-less {
-    display: none;
-}
-.leaflet-popup-content .description.is-expanded .showmore-less{
-    display: block;
-}
-.leaflet-popup-content .description.is-expanded .cont {
-    display: initial;
-}
-
-.leaflet-popup-content .share {
-    text-align: right;
-}
-.leaflet-popup-content .share span {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    display: inline-block;
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    vertical-align: top;
-    margin-left: 7px;
-}
-.leaflet-popup-content .share .share--facebook {
-    background-image: url('../img/icons/facebook.svg');
-}
-.leaflet-popup-content .share .share--twitter {
-    background-image: url('../img/icons/twitter.svg');
-}
-
-*/
 
 
 /* MAP

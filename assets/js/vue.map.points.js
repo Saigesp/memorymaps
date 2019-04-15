@@ -22,6 +22,10 @@ Vue.component('d3vuemap-points', {
             EventBus.$emit('map_move', data);
         })
 
+        self.map.onpoint('click', (data)=>{
+            EventBus.$emit('point_click', data);
+        })
+
         EventBus.$on('addpoints', (data)=>{
             self.points = data;
         })

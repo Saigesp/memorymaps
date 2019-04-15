@@ -83,6 +83,14 @@
                     <div class="menu" @click="sidebaropen = 'right'">menu</div>
                 </aside>
 
+                <main class="content main"  :class="{active: sidebaropen == 'main'}">
+                    <div class="main-wrap">
+                        <img class="main-thumb" v-if="point.id" :src="'assets/img/ills/'+point.id+'.jpg'" :alt="point.name">
+                        <h2 class="main-title" v-html="point.name"></h2>
+                        <div class="main-body" v-html="point.desc"></div>
+                    </div>
+                </main>
+
             </div>
             <d3vuemap-points :lat="lat" :lng="lng" :zoom="zoom"></d3vuemap-points>
         </div>
@@ -104,13 +112,22 @@
             lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.706255,
             zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 13,
             sidebaropen: '',
+            point: {
+                id: '',
+                name: '',
+                desc: '',
+            }
         },
         created: function(){
             var self = this;
-            EventBus.$on('map_move', (data)=>{
+            EventBus.$on('map_move', function(data){
                 self.lat = data.lat;
                 self.lng = data.lng;
                 self.zoom = data.zoom;
+            });
+            EventBus.$on('point_click', function(data){
+                self.point = data;
+                self.sidebaropen = 'main';
             });
         },
         mounted: function(){
