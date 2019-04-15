@@ -59,7 +59,7 @@
             <div class="overmap">
                 <aside class="sidebar left" :class="{active: sidebaropen == 'left'}">
                     <div class="sidebar-wrap">
-                        ola
+                        Lorem ipsum consectetur eu sunt aute et tempor anim laborum enim ex anim sint magna laboris elit in tempor ea incididunt cillum labore reprehenderit consequat dolor reprehenderit quis fugiat quis incididunt et excepteur sunt voluptate aliquip irure irure tempor magna exercitation aliquip laboris in nostrud velit consectetur do mollit irure quis ut nulla est nostrud ad irure fugiat anim fugiat eu cillum reprehenderit consequat sed qui occaecat tempor voluptate eiusmod quis ea aute pariatur minim enim ut officia cupidatat officia duis voluptate dolor ullamco in eiusmod nostrud esse velit adipisicing anim ea officia tempor sed dolor tempor eiusmod incididunt reprehenderit ullamco consectetur id sit anim eu magna sint laborum dolor aliquip nulla commodo quis commodo magna dolor officia mollit magna adipisicing ex consequat aliquip sunt dolore eu incididunt minim enim reprehenderit irure laborum minim pariatur deserunt sint dolore anim consectetur dolore in irure ad deserunt dolor sit esse exercitation enim culpa amet elit est sit incididunt eu ea adipisicing voluptate est excepteur do voluptate ex excepteur minim dolor qui incididunt magna incididunt nisi nostrud ex cupidatat culpa amet nisi dolor sit aliqua sed laboris eu pariatur reprehenderit et cillum ut eiusmod consectetur velit cupidatat duis fugiat ad in eiusmod dolor ex ut non pariatur commodo duis aute elit dolore ut do nulla deserunt amet cupidatat nostrud id ea est ad ut sed.
                     </div>
                 </aside>
                 <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
@@ -70,12 +70,18 @@
                 
                 <div class="overmask" :class="{active: sidebaropen}" @click="sidebaropen = ''"></div>
 
+                <div class="ensigns">
+                    <a href="/">
+                        <img src="assets/img/logos/memoriade.svg" alt="Mapas de la Memoria">
+                    </a>
+                </div>
+
                 <nav class="content left">
                     <div class="menu" @click="sidebaropen = 'left'">Proyecto</div>
                 </nav>
-                <nav class="content right">
+                <aside class="content right" style="display: none;">
                     <div class="menu" @click="sidebaropen = 'right'">menu</div>
-                </nav>
+                </aside>
 
             </div>
             <d3vuemap-points :lat="lat" :lng="lng" :zoom="zoom"></d3vuemap-points>
@@ -94,9 +100,9 @@
     var app = new Vue({
         el: '#app',
         data: {
-            lat: getQueryStringParam('lat') ? getQueryStringParam('lat') : 40.428655,
-            lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.6622,
-            zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 12,
+            lat: getQueryStringParam('lat') ? getQueryStringParam('lat') : 40.402974,
+            lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.706255,
+            zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 13,
             sidebaropen: '',
         },
         created: function(){

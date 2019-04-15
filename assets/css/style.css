@@ -1,7 +1,7 @@
 /*
 
-Mapa del Cambio - Ahora Madrid
-Desarrollo: @saigesp
+Mapas de la Memoria - i25M
+Desarrollo: @Saigesp
 
 */
 
@@ -67,7 +67,6 @@ ul,li {list-style: none;margin: 0;padding: 0;}
 mark, ins {background: transparent; text-decoration: none;}
 .clear{clear: both;}
 .hidden{display: none !important;}
-
 
 /* LEAFLET
 
@@ -224,7 +223,13 @@ html, body {
 	overflow: hidden;
 	z-index: 999;
 	pointer-events: all;
+    overflow-y: scroll;
+    max-width: 400px;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
+.sidebar::-webkit-scrollbar { width: 0 !important }
+
 .sidebar.left {
 	left: -50%;
 	transition: left 200ms ease-in-out;
@@ -240,7 +245,7 @@ html, body {
 	right: 0;
 }
 .sidebar .sidebar-wrap {
-	padding: 10px;
+	padding: 50px 20px;
 }
 
 /* OVERCONTENT
@@ -260,10 +265,35 @@ html, body {
 	right: 0;
 }
 .content .content-wrap {
-	padding: 10px;
+	padding: 20px;
 }
 .content .menu {
-	pointer-events: all;
+    pointer-events: all;
+    margin: 85px 20px 0;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 350ms ease;
+}
+.content .menu:hover {
+    opacity: 0.6;
+}
+
+.ensigns {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.ensigns a {
+    pointer-events: all;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.ensigns img {
 }
 
 /* POPUP
