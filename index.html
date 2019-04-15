@@ -96,6 +96,12 @@
                     </div>
                 </main>
 
+                <div class="logos">
+                    <a href="https://www.guengl.eu/" target="_blank"><img src="assets/img/logos/GUE.svg" alt="GUE"></a>
+                    <a href="https://instituto25m.info/" target="_blank"><img src="assets/img/logos/i25m.svg" alt="i25m"></a>
+                    <a href="https://podemos.info/" target="_blank"><img src="assets/img/logos/podemos.svg" alt="Podemos"></a>
+                </div>
+
             </div>
             <d3vuemap-points :lat="lat" :lng="lng" :zoom="zoom"></d3vuemap-points>
         </div>
@@ -121,7 +127,8 @@
                 id: '',
                 name: '',
                 desc: '',
-            }
+            },
+            filters: [],
         },
         created: function(){
             var self = this;
@@ -136,9 +143,11 @@
             });
         },
         mounted: function(){
+            var self = this;
             var points = []
             d3.json('assets/data/data.json').then(function(data){
                 data.maps.forEach(function(map){
+                    self.filters.push(map.id)
                     points = points.concat(map.items);
                 })
                 EventBus.$emit('addpoints', points);
