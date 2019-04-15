@@ -84,6 +84,7 @@
                 </aside>
 
                 <main class="content main"  :class="{active: sidebaropen == 'main'}">
+                    <img class="icon close" src="assets/img/icons/close.svg" alt="Cerrar" title="Cerrar" @click="sidebaropen = ''">
                     <div class="main-wrap">
                         <img class="main-thumb" v-if="point.id" :src="'assets/img/ills/'+point.id+'.jpg'" :alt="point.name">
                         <h2 class="main-title" v-html="point.name"></h2>
@@ -143,6 +144,7 @@
             lat: function(val) { updateQueryStringParam('lat', val); },
             lng: function(val) { updateQueryStringParam('lng', val); },
             zoom: function(val){ updateQueryStringParam('zoom', val); },
+            sidebaropen: function(val){ if(!val) this.point = {}; }
         }
     });
         
