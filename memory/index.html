@@ -1,0 +1,190 @@
+<!DOCTYPE html lang="es-ES" >
+<html>
+
+    <head>
+        <title>Mapas de la Memoria - Instituto 25M</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <meta property="og:title" content="Mapas de la Memoria - Instituto 25M" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:locale" content="es_ES" />
+        <meta property="article:publisher" content="">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- schema.org markup for Google+ -->
+        <meta itemprop="name" content="Mapas de la Memoria - Instituto 25M" >
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="Mapas de la Memoria - Instituto 25M">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:image:src" content="">
+
+        <!-- favicon -->
+        <!--
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        -->
+    </head>
+
+    <body>        
+        <div id="app" class="main">
+            <div class="overmap">
+                <aside class="sidebar left" :class="{active: sidebaropen == 'left'}">
+                    <div class="sidebar-wrap">
+                        <ul class="filter-list">
+                            <li class="filter-item" :class="{inactive: inactivefilters.includes(filter.id)}" v-for="filter in filters" @click="toggleFilter(filter.id)">
+                                <div class="filter-element">
+                                    <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="35" :fill="filter.color" :stroke="filter.color" stroke-opacity="1" stroke-width="15" fill-opacity="0.5"/>
+                                    </svg>
+                                    <span v-html="filter.title"></span>
+                                </div>
+                                <div class="filter-legend">
+                                    <h3 v-html="filter.title"></h3>
+                                    <p v-html="filter.subtitle"></p>
+                                    <p>Ilustrado por {{filter.illustrator}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
+                    <div class="sidebar-wrap">
+                        Lorem ipsum consectetur eu sunt aute et tempor anim laborum enim ex anim sint magna laboris elit in tempor ea incididunt cillum labore reprehenderit consequat dolor reprehenderit quis fugiat quis incididunt et excepteur sunt voluptate aliquip irure irure tempor magna exercitation aliquip laboris in nostrud velit consectetur do mollit irure quis ut nulla est nostrud ad irure fugiat anim fugiat eu cillum reprehenderit consequat sed qui occaecat tempor voluptate eiusmod quis ea aute pariatur minim enim ut officia cupidatat officia duis voluptate dolor ullamco in eiusmod nostrud esse velit adipisicing anim ea officia tempor sed dolor tempor eiusmod incididunt reprehenderit ullamco consectetur id sit anim eu magna sint laborum dolor aliquip nulla commodo quis commodo magna dolor officia mollit magna adipisicing ex consequat aliquip sunt dolore eu incididunt minim enim reprehenderit irure laborum minim pariatur deserunt sint dolore anim consectetur dolore in irure ad deserunt dolor sit esse exercitation enim culpa amet elit est sit incididunt eu ea adipisicing voluptate est excepteur do voluptate ex excepteur minim dolor qui incididunt magna incididunt nisi nostrud ex cupidatat culpa amet nisi dolor sit aliqua sed laboris eu pariatur reprehenderit et cillum ut eiusmod consectetur velit cupidatat duis fugiat ad in eiusmod dolor ex ut non pariatur commodo duis aute elit dolore ut do nulla deserunt amet cupidatat nostrud id ea est ad ut sed.
+                    </div>
+                </aside>
+                
+                <div class="overmask" :class="{active: sidebaropen}" @click="sidebaropen = ''"></div>
+
+                <div class="ensigns">
+                    <a href="/">
+                        <img src="assets/img/logos/memoriade.svg" alt="Mapas de la Memoria">
+                    </a>
+                </div>
+
+                <nav class="content left">
+                    <div class="menu-wrap">
+                        <div class="menu" @click="sidebaropen = 'left'">Rutas</div>
+                    </div>
+                </nav>
+                <aside class="content right">
+                    <div class="menu-wrap">
+                        <div class="menu" @click="sidebaropen = 'right'">Proyecto</div>
+                    </div>
+                </aside>
+
+                <main class="content main"  :class="{active: sidebaropen == 'main'}">
+                    <img class="icon close" src="assets/img/icons/close.svg" alt="Cerrar" title="Cerrar" @click="sidebaropen = ''">
+                    <div class="main-wrap">
+                        <img class="main-thumb" v-if="point.id" :src="'assets/img/ills/'+point.id+'.jpg'" :alt="point.name">
+                        <h2 class="main-title" v-html="point.name"></h2>
+                        <div class="main-body" v-html="point.desc"></div>
+                    </div>
+                </main>
+
+                <div class="logos">
+                    <a href="https://www.guengl.eu/" target="_blank"><img src="assets/img/logos/GUE.svg" alt="GUE"></a>
+                    <a href="https://instituto25m.info/" target="_blank"><img src="assets/img/logos/i25m.svg" alt="i25m"></a>
+                    <a href="https://podemos.info/" target="_blank"><img src="assets/img/logos/podemos.svg" alt="Podemos"></a>
+                </div>
+
+            </div>
+            <d3vuemap-points :lat="lat" :lng="lng" :zoom="zoom"></d3vuemap-points>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <script src="assets/js/bundle.js"></script>
+    <script src="assets/js/d3.map.js"></script>
+    <script src="assets/js/d3.map.points.js"></script>
+    <script src="assets/js/vue.map.points.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+    const EventBus = new Vue();
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            lat: getQueryStringParam('lat') ? getQueryStringParam('lat') : 40.402974,
+            lng: getQueryStringParam('lng') ? getQueryStringParam('lng') : -3.706255,
+            zoom: getQueryStringParam('zoom') ? getQueryStringParam('zoom') : 13,
+            inactivefilters: getQueryStringArray('dn') ? getQueryStringArray('dn') : [],
+            sidebaropen: '',
+            point: {
+                id: '',
+                name: '',
+                desc: '',
+            },
+            filters: [],
+        },
+        created: function(){
+            var self = this;
+            EventBus.$on('map_move', function(data){
+                self.lat = data.lat;
+                self.lng = data.lng;
+                self.zoom = data.zoom;
+            });
+            EventBus.$on('point_click', function(data){
+                self.point = data;
+                self.sidebaropen = 'main';
+            });
+        },
+        mounted: function(){
+            var self = this;
+            var points = []
+            d3.json('assets/data/data.json').then(function(data){
+                data.maps.forEach(function(map){
+                    console.log(map);
+                    self.filters.push({title: map.title, id: map.id, color: map.color, subtitle: map.subtitle, illustrator: map.illustrator})
+                    points = points.concat(map.items);
+                })
+                EventBus.$emit('addpoints', points);
+                setTimeout(function(){ self.showFilters(); }, 0);
+            })
+        },
+        methods: {
+            toggleFilter(filter){
+                if(filter){
+                    updateQueryStringArray('dn', filter)
+                    var index = this.inactivefilters.indexOf(filter);
+                    if (index > -1) this.inactivefilters.splice(index, 1)
+                    else this.inactivefilters.push(filter)
+                }else this.inactivefilters = [];
+            },
+            showFilters(){
+                d3.selectAll('.point').classed('inactive', false);
+                this.inactivefilters.forEach(function(v){
+                    d3.selectAll('.point.c-'+v).classed('inactive', true);
+                })
+            }
+        },
+        watch: {
+            lat: function(val) { updateQueryStringParam('lat', val); },
+            lng: function(val) { updateQueryStringParam('lng', val); },
+            zoom: function(val){ updateQueryStringParam('zoom', val); },
+            sidebaropen: function(val){ if(!val) this.point = {}; },
+            inactivefilters: function(val){ this.showFilters(); },
+        }
+    });
+        
+    </script>
+    <!-- end scripts -->
+
+</html>
