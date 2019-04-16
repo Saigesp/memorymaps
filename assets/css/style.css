@@ -212,24 +212,27 @@ html, body {
 	background: #D7F7E3;
 	width: 50%;
 	height: 100%;
-	overflow: hidden;
 	z-index: 999;
 	pointer-events: all;
-    overflow-y: scroll;
     max-width: 400px;
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
 }
-.sidebar::-webkit-scrollbar { width: 0 !important }
 
 .sidebar.left {
 	left: -50%;
 	transition: left 200ms ease-in-out;
+    max-width: 320px;
 }
 .sidebar.right {
 	right: -50%;
 	transition: right 200ms ease-in-out;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
+.sidebar.right::-webkit-scrollbar {
+    width: 0 !important;
+}
+
 .sidebar.left.active {
 	left: 0;
 }
@@ -361,12 +364,34 @@ html, body {
 /* Filters */
 .filter-list {}
 .filter-item {
-    margin: 10px 0;
+    padding: 10px 0;
     cursor: pointer;
+    position: relative;
 }
-.filter-item.inactive {
+.filter-item.inactive .filter-element{
     opacity: 0.4;
 }
+.filter-legend {
+    display: none;
+    position: absolute;
+    left: calc(100% + 30px);
+    background: black;
+    color: white;
+    padding: 20px;
+    width: calc(100% - 20px);
+    top: -7px;
+}
+.filter-item:hover .filter-legend{
+    display: block;
+}
+
+.filter-item h3 {
+    margin-top: 0;
+}
+.filter-item p:last-child {
+    margin-bottom: 0;
+}
+
 .filter-item svg {
     width: 20px;
     height: 20px;
