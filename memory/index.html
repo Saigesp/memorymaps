@@ -17,6 +17,7 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
 
         <!-- schema.org markup for Google+ -->
         <meta itemprop="name" content="Mapas de la Memoria - Instituto 25M" >
@@ -58,8 +59,10 @@
                                 </div>
                                 <div class="filter-legend">
                                     <h3 v-html="filter.title"></h3>
-                                    <p v-html="filter.subtitle"></p>
-                                    <p>Ilustrado por {{filter.illustrator}}</p>
+                                    <p class="subtitle" v-html="filter.subtitle"></p>
+                                    <img :src="'assets/img/ills/'+filter.id+'.jpg'" alt="filter.title">
+                                    <p class="illustred">Ilustrado por {{filter.illustrator}}</p>
+                                    <p class="text" v-html="filter.text"></p>
                                 </div>
                             </li>
                         </ul>
@@ -152,8 +155,9 @@
             var points = []
             d3.json('assets/data/data.json').then(function(data){
                 data.maps.forEach(function(map){
-                    self.filters.push({title: map.title, id: map.id, color: map.color, subtitle: map.subtitle, illustrator: map.illustrator})
                     points = points.concat(map.items);
+                    delete map.items;
+                    self.filters.push(map)
                 })
                 EventBus.$emit('addpoints', points);
                 setTimeout(function(){ self.showFilters(); }, 0);
