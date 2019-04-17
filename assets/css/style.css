@@ -80,13 +80,12 @@ html {
 html::-webkit-scrollbar {
     width: 0 !important;
 }
-body {}
-
-.header {
-    height: 300px;
-    background: #54075B;
+body {
+    background: #e8e8e8;
 }
-.main {}
+.main {
+    background: white;
+}
 .main h1 {
     text-align: center;
     font-size: 36px;
@@ -97,27 +96,50 @@ body {}
 .main-wrap {
     display: block;
     padding: 20px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 .main-body {}
 .main-footer {}
 
 .maps {
+}
+.map {
+    margin: 16px 0;
     display: flex;
-    margin: 30px 0 30px -5px;
-    width: calc(100% + 10px);
-
+    flex-wrap: wrap;
+}
+.map .map-thumb {
+    flex: 1 1 50%;
+    /*margin: 30px 0 30px -5px;*/
+}
+.map .map-body {
+    flex: 1 1 100%;
+    
 }
 .maps a {
-    flex: 0 1 calc(33.33% - 10px);
-    margin: 0 5px;
     transition: opacity 350ms ease;
 }
 .maps a:hover {
     opacity: 0.5;
 }
+.maps h2 {
+    margin-top: 10px;
+}
 .maps img {
+    width: 100%;
+    height: auto;
+}
+.maps .portadas {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.maps .portadas a {
+    display: block;
+    flex: 0 1 67px;
+    margin-right: 3px;
+}
+.maps .portadas img {
     width: 100%;
     height: auto;
 }
@@ -132,5 +154,16 @@ body {}
 
 .footer {
     margin-top: 40px;
-    background: #e8e8e8;
+}
+
+
+
+@media only screen and (min-width: 670px) {
+    .map {
+        flex-wrap: nowrap;
+    }
+    .map .map-body {
+        margin-left: 10px;
+        flex: 1 1 calc(50% - 10px);
+    }
 }
