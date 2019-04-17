@@ -35,21 +35,30 @@
 
     <style>
         #map svg {
-            width: 100%;
             pointer-events: none;
+            background: steelblue;
+        }
+        button {
+            float: left;
+            z-index: 999;
         }
     </style>
 
     <body>
-        <button id="zoom">Zoom1</button>
-        <button id="zoom2">Zoom2</button>
-        <button id="zoom3">Zoom3</button>
-        <div id="map" style="width: 100%; height: 1025px;"></div>
+        <button id="zoom">Scale 5</button>
+        <div id="map" style="width: 100%; height: 1025px;position: relative;z-index: -1;"></div>
     </body>
 
     <!-- scripts -->
     <script src="assets/js/bundle.js"></script>
     <script type="text/javascript">
+
+        function calculeLenghts(){
+            console.log(window.innerWidth, window.innerHeight);
+        }
+        calculeLenghts();
+        window.addEventListener("resize", calculeLenghts);
+
         d3.xml('assets/img/world.svg').then(data => {
             d3.select('#map').node().append(data.documentElement);
 
@@ -61,14 +70,10 @@
             var canvas = svg.call(zoom)
 
             d3.select('#zoom').on('click', function(){
-                zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.translate(-100,-200).scale(5));
-            })
-            d3.select('#zoom2').on('click', function(){
-                zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.translate(-400,-100));
-                //zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.translate(-300,-200));
-            })
-            d3.select('#zoom3').on('click', function(){
-                zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.translate(-100,-200));
+                var scale = 10
+                var point = {x:956,y:320} //spain
+                var point = {x:2000,y:1000}
+                zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.scale(scale).translate(((-point.x*scale)+((scale-1)*1000)+(window.innerWidth/2))/scale,((((-point.y+1000)*scale)-(((scale-1)*500)+1000))+window.innerHeight/2)/scale));
             })
         })
     </script>
