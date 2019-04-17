@@ -264,7 +264,7 @@ html, body {
 }
 .content .menu {
     pointer-events: all;
-    margin: 85px 20px 0;
+    margin: 100px 20px 0;
     display: inline-block;
     font-weight: 700;
     font-size: 20px;
@@ -322,7 +322,11 @@ html, body {
     max-width: 400px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
+}
+.main-thumb {
+    width: 100%;
+    height: auto;
 }
 .main-title {
     text-align: center;
@@ -338,7 +342,7 @@ html, body {
 }
 .ensigns a {
     pointer-events: all;
-    max-width: 200px;
+    max-width: 260px;
     margin: 0 auto;
     display: block;
     width: 100%;
@@ -410,8 +414,27 @@ html, body {
 
 @media only screen and (min-width: 870px) {
     .content.main {
-        width: 700px;
-        left: calc(50% - 350px);
+        width: 800px;
+        left: calc(50% - 400px);
+        height: auto;
+    }
+    .main-wrap {
+        display: flex;
+        padding: 40px;
+    }
+    .main-thumb {
+        flex: 0 0 300px;
+    }
+    .main-body {
+        flex: 1 1 auto;
+        margin-left: 40px;
+
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .content.main {
+        width: 980px;
+        left: calc(50% - 490px);
     }
 }
 
