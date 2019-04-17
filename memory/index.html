@@ -70,7 +70,14 @@
                 </aside>
                 <aside class="sidebar right" :class="{active: sidebaropen == 'right'}">
                     <div class="sidebar-wrap">
-                        Lorem ipsum consectetur eu sunt aute et tempor anim laborum enim ex anim sint magna laboris elit in tempor ea incididunt cillum labore reprehenderit consequat dolor reprehenderit quis fugiat quis incididunt et excepteur sunt voluptate aliquip irure irure tempor magna exercitation aliquip laboris in nostrud velit consectetur do mollit irure quis ut nulla est nostrud ad irure fugiat anim fugiat eu cillum reprehenderit consequat sed qui occaecat tempor voluptate eiusmod quis ea aute pariatur minim enim ut officia cupidatat officia duis voluptate dolor ullamco in eiusmod nostrud esse velit adipisicing anim ea officia tempor sed dolor tempor eiusmod incididunt reprehenderit ullamco consectetur id sit anim eu magna sint laborum dolor aliquip nulla commodo quis commodo magna dolor officia mollit magna adipisicing ex consequat aliquip sunt dolore eu incididunt minim enim reprehenderit irure laborum minim pariatur deserunt sint dolore anim consectetur dolore in irure ad deserunt dolor sit esse exercitation enim culpa amet elit est sit incididunt eu ea adipisicing voluptate est excepteur do voluptate ex excepteur minim dolor qui incididunt magna incididunt nisi nostrud ex cupidatat culpa amet nisi dolor sit aliqua sed laboris eu pariatur reprehenderit et cillum ut eiusmod consectetur velit cupidatat duis fugiat ad in eiusmod dolor ex ut non pariatur commodo duis aute elit dolore ut do nulla deserunt amet cupidatat nostrud id ea est ad ut sed.
+                        <p>A menudo, recorremos la ciudad sin ser conscientes de las historias que esconden sus calles y sus edificios, testigos mudos de una memoria de dolor y de lucha, de gritos y de silencios, de oscuridad y de conquistas.</p>
+                        <p><strong>#MemoriaDe</strong> es un proyecto conjunto del Instituto 25M y el área de memoria democrática de Podemos. Se trata de una colección de mapas que recorren al pasado reciente de Madrid a través de distintas perspectivas temáticas: el antifranquismo, el feminismo, las luchas LGTBI, el movimiento estudiantil y las luchas vecinales. Cinco abordajes que recogen el trabajo de colectivos o personas expertas en cada uno de estos ejes, y la mirada de un ilustrador o ilustradora que pone trazos y colores a sus investigaciones. Los mapas, editados primero en papel, se recogen ahora en esta página web.</p>
+                        <p>La ciudad respira memoria. Estos mapas quieren ayudar a recordarla, para que no caminemos sin ver.</p>
+                        <div class="portadas">
+                            <div v-for="filter in filters">
+                                <img :src="'assets/img/ills/'+filter.id+'.jpg'" alt="filter.name"></a>
+                            </div>
+                        </div>
                     </div>
                 </aside>
                 
