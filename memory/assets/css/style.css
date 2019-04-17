@@ -209,7 +209,7 @@ html, body {
 .sidebar {
 	position: absolute;
 	top: 0;
-	background: #D7F7E3;
+	background: #e9efeb;
 	width: 50%;
 	height: 100%;
 	z-index: 999;
@@ -286,7 +286,7 @@ html, body {
     left: 10%;
     top: 100%;
     z-index: 99;
-    background: #D7F7E3;
+    background: #e9efeb;
     pointer-events: all;
     transition: top 200ms ease-in-out;
 }
@@ -379,14 +379,25 @@ html, body {
     display: none;
     position: absolute;
     left: calc(100% + 30px);
-    background: black;
+    background: #212121;
     color: white;
     padding: 20px;
     width: calc(100% - 20px);
     top: -7px;
+    border-left-width: 4px;
+    border-left-style: solid;
 }
 .filter-item:hover .filter-legend{
     display: block;
+}
+.filter-element{
+    transition: opacity 350ms ease;
+}
+.filter-element:hover {
+    opacity: 0.3;
+}
+.filter-item.inactive .filter-element:hover {
+    opacity: 0.8;
 }
 
 .filter-item h3 {
@@ -414,6 +425,13 @@ html, body {
     height: 20px;
     display: inline-block;
     vertical-align: middle;
+    transition: opacity 350ms ease;
+}
+.filter-item.inactive svg{
+    opacity: 0;
+}
+.filter-item.inactive .filter-element:hover svg{
+    opacity: 0.8;
 }
 .filter-item span {
     vertical-align: middle;

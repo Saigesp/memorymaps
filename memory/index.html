@@ -57,7 +57,7 @@
                                     </svg>
                                     <span v-html="filter.title"></span>
                                 </div>
-                                <div class="filter-legend">
+                                <div class="filter-legend" :style="{borderColor: filter.color}">
                                     <h3 v-html="filter.title"></h3>
                                     <p class="subtitle" v-html="filter.subtitle"></p>
                                     <img :src="'assets/img/ills/'+filter.id+'.jpg'" alt="filter.title">
