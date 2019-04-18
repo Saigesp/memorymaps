@@ -26,12 +26,23 @@
             "id": 1,
             "title": "Las grandes fortunas",
             "subtitle": "Los muy muy ricos y las grandes empresas multinacionales",
-            "content": "<p>La ruta del dinero empieza con una historia de secretos y mentiras. En España, el 91% de las empresas del Ibex35 tienen relación con paraísos fiscales, a través de 858 filiales que evaden así sus obligaciones contributivas.</p><p>Por su parte, el 94% de las principales multinacionales asentadas en nuestro país también son opacas en lo que respecta a los impuestos: no pagan la parte que les corresponde, y no realizan la rendición de cuentas que cabe exigirles.</p>",
+            "content": "<p>La ruta del dinero empieza con una historia de secretos y mentiras. En España, el 91% de las empresas del Ibex35 tienen relación con paraísos fiscales, a través de 858 filiales que evaden así sus obligaciones contributivas.</p>",
             "x":956,
             "y":320,
             "scale":8,
             "duration": 3000,
-            "countries": ["Spain"]
+            "countries": []
+        },
+        {
+            "id": 1,
+            "title": "",
+            "subtitle": "",
+            "content": "<p>Por su parte, el 94% de las principales multinacionales asentadas en nuestro país también son opacas en lo que respecta a los impuestos: no pagan la parte que les corresponde, y no realizan la rendición de cuentas que cabe exigirles.</p>",
+            "x":970,
+            "y":265,
+            "scale":6,
+            "duration": 3000,
+            "countries": []
         },
         {
             "id": 2,
@@ -58,10 +69,20 @@
         {
             "id": 4,
             "subtitle": "",
-            "content": "<p>El proceso se inicia con un banco que realiza las transferencias. Este pone en contacto al cliente con un bufete de abogados o un asesor fiscal que crea todo el entramado. En algunos casos no solo crea la sociedad en un paraíso fiscal, sino que también puede facilitar el nombre de los testaferros que aparecen en la sociedad pantalla.</p>",
+            "content": "<p>El proceso se inicia con un banco que realiza las transferencias. Este pone en contacto al cliente con un bufete de abogados o un asesor fiscal que crea todo el entramado.</p>",
             "x":750,
             "y":400,
             "scale":2,
+            "duration": 4500,
+            "countries": []
+        },
+        {
+            "id": 4,
+            "subtitle": "",
+            "content": "<p>En algunos casos no solo crea la sociedad en un paraíso fiscal, sino que también puede facilitar el nombre de los testaferros que aparecen en la sociedad pantalla.</p>",
+            "x":520,
+            "y":510,
+            "scale":8,
             "duration": 4500,
             "countries": []
         },
