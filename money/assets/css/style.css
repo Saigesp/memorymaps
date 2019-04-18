@@ -120,7 +120,7 @@ body {
 .section-wrap {
     width: 100%;
     max-width: 600px;
-    margin: 100px auto;
+    margin: 0;
 }
 .section{
     padding: 0 40px;
@@ -142,5 +142,8 @@ body {
 
 
 @media only screen and (min-width: 870px) {
-    
+    .section{
+        padding: 0 100px;
+        margin-bottom: 600px;
+    }
 }

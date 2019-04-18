@@ -2,9 +2,9 @@
     "stories": [
         {
             "id": 0,
-            "title": "Start",
+            "title": "",
             "subtitle": "",
-            "content": "",
+            "content": "<img src='assets/img/logos/europa.svg'/>",
             "x":1000,
             "y":500,
             "scale":1,
