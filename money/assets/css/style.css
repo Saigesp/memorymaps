@@ -72,3 +72,75 @@ mark, ins {background: transparent; text-decoration: none;}
 body {
     background: #a8c5de;
 }
+
+#map {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+#map path{
+    fill:#eaeaea;
+    stroke:#a0adb9;
+    stroke-width: 0.1px;
+    fill-rule:evenodd;
+    transition: fill 450ms ease;
+    transition-delay: 3000ms;
+}
+#map path.active{
+    fill: #decfcf;
+}
+#overmap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+#overmap > div{
+    width: 100%;
+    position: absolute;
+}
+#overmap .bottom{
+    bottom: 0;
+}
+#overmap .right{
+    right: 0;
+}
+#overmap .right > div{
+    margin-left: auto;
+}
+#sections {
+    overflow: auto;
+}
+
+
+
+.section-wrap {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+}
+.section{
+    padding: 0 40px;
+    margin-bottom: 600px;
+}
+.section h1{
+}
+
+
+.logos {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+}
+.logos a {
+    display: block;
+    flex: 1 1 100%;
+}
+
+
+@media only screen and (min-width: 870px) {
+    
+}
