@@ -43,6 +43,17 @@
             left: 0;
             pointer-events: none;
         }
+        #map path{
+            fill:#eaeaea;
+            stroke:#bcb3b3;
+            stroke-width: 0.5px;
+            fill-rule:evenodd;
+            transition: fill 450ms ease;
+            transition-delay: 3000ms;
+        }
+        #map path.active{
+            fill: #6d7b87;
+        }
         #sections {
             overflow: auto;
         }
@@ -60,57 +71,87 @@
     </style>
 
     <body>
-        <div id="map"></div>
-        <main id="sections">
-            <div class="section-wrap">
-            </div>
-        </main>
+        <div id="app">
+            <div id="map"></div>
+            <main id="sections">
+                <div class="section-wrap">
+                </div>
+            </main>
+        </div>
     </body>
 
     <!-- scripts -->
     <script src="assets/js/bundle.js"></script>
     <script type="text/javascript">
+    const EventBus = new Vue();
 
-        d3.xml('assets/img/world.svg').then(world => {
-            d3.json('assets/data/data.json').then(function(data){
+    var app = new Vue({
+        el: '#app',
+        data: {
+            content: {},
+            current: 0,
+        },
+        created: function(){
+            var self = this;
+            d3.xml('assets/img/world.svg').then(world => {
+                d3.json('assets/data/data.json').then(function(data){
 
-                d3.select('#map').node().append(world.documentElement);
+                    d3.select('#map').node().append(world.documentElement);
 
-                var svg = d3.select('#world')
+                    self.svg = d3.select('#world')
 
-                var zoom = d3.zoom().on('zoom', function() {
-                        canvas.attr('transform', d3.event.transform);
-                    })
-                var canvas = svg.call(zoom)
+                    self.zoom = d3.zoom().on('zoom', function() {
+                            self.canvas.attr('transform', d3.event.transform);
+                        })
 
-                var sections = d3.select('.section-wrap').selectAll('.section')
-                    .data(data.stories).enter()
-                    .append('section')
-                    .attr('class', 'section')
-                    .attr('style', 'margin-bottom:'+(window.innerHeight*4/5)+'px')
+                    self.canvas = self.svg.call(self.zoom)
 
-                sections.append('h1').text(function(d){ return d.title }).attr('style', 'margin-top:'+(window.innerHeight/2)+'px')
-                sections.append('div').html(function(d){ return d.text })
+                    var sections = d3.select('.section-wrap').selectAll('.section')
+                        .data(data.stories).enter()
+                        .append('section')
+                        .attr('class', 'section')
+                        .attr('style', 'margin-bottom:'+(window.innerHeight*4/5)+'px')
 
-                function centerPoint(x,y,scale=1,duration=1500){
-                    zoom.transform(svg.transition().duration(duration),
-                        d3.zoomIdentity.scale(scale)
-                        .translate(
-                            ((-x*scale)+((scale-1)*1000)+(window.innerWidth/2))/scale,
-                            ((((-y+1000)*scale)-(((scale-1)*500)+1000))+window.innerHeight/2)/scale
-                        )
-                    );
-                }
+                    sections.append('h1').text(function(d){ return d.title }).attr('style', 'margin-top:'+(window.innerHeight/2)+'px')
+                    sections.append('div').html(function(d){ return d.text })
 
-                d3.graphScroll()
-                    .sections(d3.selectAll('.section'))
-                    .on('active', function(i){
-                        console.log(i + 'th section active')
-                        centerPoint(data.stories[i].x,data.stories[i].y,data.stories[i].scale,data.stories[i].duration)
-                    })
-
+                    d3.graphScroll()
+                        .sections(d3.selectAll('.section'))
+                        .on('active', function(i){
+                            self.content = data.stories[i]
+                            self.current = i
+                        })
+                })
             })
-        })
+        },
+        methods: {
+            centerPoint(x,y,scale=1,duration=1500){
+                this.zoom.transform(this.svg.transition().duration(duration),
+                    d3.zoomIdentity.scale(scale)
+                    .translate(
+                        ((-x*scale)+((scale-1)*1000)+(window.innerWidth/2))/scale,
+                        ((((-y+1000)*scale)-(((scale-1)*500)+1000))+window.innerHeight/2)/scale
+                    )
+                );
+            },
+            loadContent(item){
+                this.centerPoint(item.x,item.y,item.scale,item.duration)
+                d3.selectAll('path[data-name]').classed('active', false)
+                item.countries.forEach(function(country){
+                    d3.selectAll('path[data-name="'+country+'"]')
+                        .classed('active', true)
+                });
+            }
+        },
+        watch: {
+            current(val){
+                this.loadContent(this.content)
+            }
+        }
+    });
+
+
+
     </script>
     <!-- end scripts -->
 

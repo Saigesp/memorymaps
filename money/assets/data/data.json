@@ -7,7 +7,8 @@
             "x":1000,
             "y":500,
             "scale":1,
-            "duration": 1500
+            "duration": 1500,
+            "countries": []
         },
         {
             "id": 1,
@@ -16,16 +17,18 @@
             "x":956,
             "y":320,
             "scale":12,
-            "duration": 4500
+            "duration": 4500,
+            "countries": ["Spain"]
         },
         {
             "id": 2,
-            "title": "nueva Zelanda",
+            "title": "Nueva Zelanda",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi cupiditate alias magnam tempore sint impedit soluta ratione. Dolorum vero reiciendis maiores ipsa quam exercitationem amet, tempore nisi reprehenderit ad.",
             "x":1875,
             "y":830,
             "scale":8,
-            "duration": 4500
+            "duration": 4500,
+            "countries": ["New Zealand"]
         },
         {
             "id": 3,
@@ -34,25 +37,28 @@
             "x":540,
             "y":440,
             "scale":8,
-            "duration": 4500
+            "duration": 4500,
+            "countries": ["Cuba"]
         },
         {
             "id": 4,
-            "title": "Cuba2",
+            "title": "Caribe",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos possimus eos inventore assumenda, quisquam, ducimus architecto sunt unde. Minus nam libero vitae dolores alias quasi cumque reprehenderit, aspernatur eum quis!",
             "x":550,
             "y":460,
             "scale":4,
-            "duration": 4500
+            "duration": 4500,
+            "countries": []
         },
         {
             "id": 5,
-            "title": "Cuba3",
+            "title": "Perú",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos possimus eos inventore assumenda, quisquam, ducimus architecto sunt unde. Minus nam libero vitae dolores alias quasi cumque reprehenderit, aspernatur eum quis!",
             "x":550,
             "y":660,
             "scale":4,
-            "duration": 4500
+            "duration": 4500,
+            "countries": ["Peru"]
         },
         {
             "id": 6,
@@ -61,7 +67,8 @@
             "x":956,
             "y":320,
             "scale":4,
-            "duration": 4500
+            "duration": 4500,
+            "countries": ["Spain"]
         }
     ]
 }
