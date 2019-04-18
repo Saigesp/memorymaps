@@ -34,46 +34,81 @@
     </head>
 
     <style>
-        #map svg {
+        #map {
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
             pointer-events: none;
-            background: steelblue;
         }
-        button {
-            float: left;
-            z-index: 999;
+        #sections {
+            overflow: auto;
+        }
+        .section-wrap {
+            width: 100%;
+            max-width: 600px;
+            margin: 100px auto;
+        }
+        .section{
+            padding: 0 40px;
+            margin-bottom: 600px;
+        }
+        .section h1{
         }
     </style>
 
     <body>
-        <button id="zoom">Scale 5</button>
-        <div id="map" style="width: 100%; height: 1025px;position: relative;z-index: -1;"></div>
+        <div id="map"></div>
+        <main id="sections">
+            <div class="section-wrap">
+            </div>
+        </main>
     </body>
 
     <!-- scripts -->
     <script src="assets/js/bundle.js"></script>
     <script type="text/javascript">
 
-        function calculeLenghts(){
-            console.log(window.innerWidth, window.innerHeight);
-        }
-        calculeLenghts();
-        window.addEventListener("resize", calculeLenghts);
+        d3.xml('assets/img/world.svg').then(world => {
+            d3.json('assets/data/data.json').then(function(data){
 
-        d3.xml('assets/img/world.svg').then(data => {
-            d3.select('#map').node().append(data.documentElement);
+                d3.select('#map').node().append(world.documentElement);
 
-            var svg = d3.select('#world')
+                var svg = d3.select('#world')
 
-            var zoom = d3.zoom().on('zoom', function() {
-                    canvas.attr('transform', d3.event.transform);
-                })
-            var canvas = svg.call(zoom)
+                var zoom = d3.zoom().on('zoom', function() {
+                        canvas.attr('transform', d3.event.transform);
+                    })
+                var canvas = svg.call(zoom)
 
-            d3.select('#zoom').on('click', function(){
-                var scale = 10
-                var point = {x:956,y:320} //spain
-                var point = {x:2000,y:1000}
-                zoom.transform(svg.transition().duration(1500), d3.zoomIdentity.scale(scale).translate(((-point.x*scale)+((scale-1)*1000)+(window.innerWidth/2))/scale,((((-point.y+1000)*scale)-(((scale-1)*500)+1000))+window.innerHeight/2)/scale));
+                var sections = d3.select('.section-wrap').selectAll('.section')
+                    .data(data.stories).enter()
+                    .append('section')
+                    .attr('class', 'section')
+                    .attr('style', 'margin-bottom:'+(window.innerHeight*4/5)+'px')
+
+                sections.append('h1').text(function(d){ return d.title }).attr('style', 'margin-top:'+(window.innerHeight/2)+'px')
+                sections.append('div').html(function(d){ return d.text })
+
+                function centerPoint(x,y,scale=1,duration=1500){
+                    zoom.transform(svg.transition().duration(duration),
+                        d3.zoomIdentity.scale(scale)
+                        .translate(
+                            ((-x*scale)+((scale-1)*1000)+(window.innerWidth/2))/scale,
+                            ((((-y+1000)*scale)-(((scale-1)*500)+1000))+window.innerHeight/2)/scale
+                        )
+                    );
+                }
+
+                d3.graphScroll()
+                    .sections(d3.selectAll('.section'))
+                    .on('active', function(i){
+                        console.log(i + 'th section active')
+                        centerPoint(data.stories[i].x,data.stories[i].y,data.stories[i].scale,data.stories[i].duration)
+                    })
+
             })
         })
     </script>

@@ -1,0 +1,67 @@
+{
+    "stories": [
+        {
+            "id": 0,
+            "title": "Start",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure officiis quasi molestiae fugit autem sunt laborum nulla excepturi, magnam modi quo enim quod illo culpa, esse repellat rem eveniet. Cum.",
+            "x":1000,
+            "y":500,
+            "scale":1,
+            "duration": 1500
+        },
+        {
+            "id": 1,
+            "title": "España",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequuntur quaerat quis iusto sint? Enim, earum alias minima at minus quibusdam cupiditate reiciendis ipsa iste ipsam nesciunt, harum repellendus eveniet.",
+            "x":956,
+            "y":320,
+            "scale":12,
+            "duration": 4500
+        },
+        {
+            "id": 2,
+            "title": "nueva Zelanda",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi cupiditate alias magnam tempore sint impedit soluta ratione. Dolorum vero reiciendis maiores ipsa quam exercitationem amet, tempore nisi reprehenderit ad.",
+            "x":1875,
+            "y":830,
+            "scale":8,
+            "duration": 4500
+        },
+        {
+            "id": 3,
+            "title": "Cuba",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam, dicta quasi. Similique earum ratione, esse tempora consequuntur nemo eaque distinctio numquam vel, recusandae nulla exercitationem, molestias assumenda excepturi deserunt!",
+            "x":540,
+            "y":440,
+            "scale":8,
+            "duration": 4500
+        },
+        {
+            "id": 4,
+            "title": "Cuba2",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos possimus eos inventore assumenda, quisquam, ducimus architecto sunt unde. Minus nam libero vitae dolores alias quasi cumque reprehenderit, aspernatur eum quis!",
+            "x":550,
+            "y":460,
+            "scale":4,
+            "duration": 4500
+        },
+        {
+            "id": 5,
+            "title": "Cuba3",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos possimus eos inventore assumenda, quisquam, ducimus architecto sunt unde. Minus nam libero vitae dolores alias quasi cumque reprehenderit, aspernatur eum quis!",
+            "x":550,
+            "y":660,
+            "scale":4,
+            "duration": 4500
+        },
+        {
+            "id": 6,
+            "title": "España2",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequuntur quaerat quis iusto sint? Enim, earum alias minima at minus quibusdam cupiditate reiciendis ipsa iste ipsam nesciunt, harum repellendus eveniet.",
+            "x":956,
+            "y":320,
+            "scale":4,
+            "duration": 4500
+        }
+    ]
+}
