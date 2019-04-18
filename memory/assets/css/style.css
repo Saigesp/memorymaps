@@ -210,8 +210,8 @@ html, body {
 	position: absolute;
 	top: 0;
 	background: #e9efeb;
-	width: 50%;
 	height: 100%;
+    width: 50%;
 	z-index: 999;
 	pointer-events: all;
     max-width: 400px;
@@ -223,7 +223,8 @@ html, body {
     max-width: 320px;
 }
 .sidebar.right {
-	right: -50%;
+	right: -80%;
+    width: 80%;
 	transition: right 200ms ease-in-out;
     overflow-y: scroll;
     overflow: -moz-scrollbars-none;
