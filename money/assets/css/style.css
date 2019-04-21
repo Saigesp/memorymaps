@@ -102,6 +102,9 @@ body {
     width: 100%;
     position: absolute;
 }
+#overmap .top{
+    top: 0;
+}
 #overmap .bottom{
     bottom: 0;
 }
@@ -142,6 +145,11 @@ body {
     flex: 1 1 100%;
 }
 
+.topmenu {
+    margin: 20px;
+    width: 100%;
+    max-width: 100px;
+}
 
 @media only screen and (min-width: 870px) {
     .section{
