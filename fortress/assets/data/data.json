@@ -1,0 +1,16 @@
+{
+    "stories": [
+        {
+            "id": 0,
+            "class": "all",
+            "title": "",
+            "subtitle": "",
+            "content": "<img src='assets/img/logos/fortress-white.svg'/>",
+            "x":1000,
+            "y":275,
+            "scale":3,
+            "duration": 1500,
+            "countries": []
+        }
+    ]
+}
