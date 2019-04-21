@@ -27,6 +27,7 @@
         {
             "id": 2,
             "class": "anim-01",
+            "ill": "01.png",
             "title": "Las grandes fortunas",
             "subtitle": "Los muy muy ricos y las grandes empresas multinacionales",
             "content": "<p>La ruta del dinero empieza con una historia de secretos y mentiras. En España, el 91% de las empresas del Ibex35 tienen relación con paraísos fiscales, a través de 858 filiales que evaden así sus obligaciones contributivas.</p>",
@@ -63,6 +64,7 @@
         {
             "id": 5,
             "class": "anim-04",
+            "ill": "02.png",
             "title": "Promotores y facilitadores",
             "subtitle": "",
             "content": "<p>Detrás de las grandes empresas o millonarios que optan por destinar parte de sus ganancias a paraísos fiscales para pagar menos impuestos a Hacienda están los llamados <strong>promotores y facilitadores</strong>: bancos, bufetes y asesores especializados que se encargan de explorar huecos y buscar agujeros en las diversas legislaciones para encontrar el tratamiento fiscal más favorable.</p>",
@@ -97,6 +99,7 @@
         {
             "id": 9,
             "class": "anim-07",
+            "ill": "03.png",
             "title": "Paraísos fiscales",
             "subtitle": "",
             "content": "<p>La Unión Europea publicó por primera vez su lista de paraísos fiscales en diciembre de 2017 en respuesta a los grandes escándalos de evasión y elusión fiscal que salieron a la luz, como LuxLeaks, los Papeles de Panamá y los Papeles del Paraíso.</p>",
@@ -133,6 +136,7 @@
         {
             "id": 11,
             "class": "anim-10",
+            "ill": "04.png",
             "title": "Secreto Bancario",
             "content": "<p>El secreto bancario es una legislación especial que permite y obliga a bancos y entidades financieras a proteger y mantener confidencial la información sobre sus clientes ante terceros, incluso aunque estos sean administraciones públicas o tributarias. Se refiere a todo tipo de datos personales y económicos, incluidos depósitos, número de cuentas o transacciones; y es por ello una herramienta clave para las prácticas de evasión.</p>",
             "x":1017,
@@ -155,6 +159,7 @@
         {
             "id": 13,
             "class": "anim-12",
+            "ill": "05.png",
             "title": "Fondos de inversión",
             "content": "Hay 30 grandes fondos de inversión que tienen presencia en casi todas las empresas del Ibex 35, de los que el 80% o bien tienen su matriz en un paraíso fiscal o mantienen su participación en las empresas a través de filiales en paraísos fiscales. El 91% de las empresas del Ibex está participada por más de 10 de estos fondos. Dentro de este grupo hay grandes gestoras globales (Blackrock, Goldman Sachs), fondos de bancos  extranjeros (Credit Agricole, Deutsche Bank) y fondos soberanos (Norges Bank, Qatar Investment Authority). De media, estas 30 entidades controlan un 27% de las acciones de las empresas del Ibex35, aunque están localizadas en países como Luxemburgo, Países Bajos, Irlanda, Chipre, Panamá, Seychelles, Hong Kong y Singapur.",
             "x":1000,
@@ -165,18 +170,10 @@
         },
         {
             "id": 14,
+            "class": "all",
+            "ill": "06.png",
             "title": "Legislación",
             "content": "<p>El origen del problema de la evasión fiscal está en el mismo lugar que su posible solución: en las leyes. El papel de las instituciones europeas en este proceso es determinante. Actualmente, la propia arquitectura económica de la UE no solo no evita, sino que admite e incluso promueve que haya regímenes fiscales dispares en su seno, propiciando una devaluación fiscal permanente; además de contar con sus propias estructuras offshore. Sin embargo, filtraciones como la Lista Falciani, Luxleaks, Papeles de Panamá o Papeles del Paraíso han obligado a las autoridades europeas a escenificar su supuesta lucha contra la evasión fiscal, abriendo comisiones de investigación.</p><p>Ahora, lo necesario es que esa puesta en escena se convierta en realidad. Esto comenzaría por reconocer qué es un paraíso fiscal, identificar los existentes, adoptar medidas y sanciones apropiadas, aumentar los requisitos de transparencia y poner en práctica medidas sólidas.</p><p>Es necesaria voluntad política para acabar con una práctica que continúa haciendo más y más grandes a las mayores fortunas del mundo, a costa de privar de servicios públicos al 99% de la ciudadanía.</p>",
-            "x":1000,
-            "y":500,
-            "scale":1,
-            "duration": 4500,
-            "countries": [""]
-        },
-        {
-            "id": 15,
-            "title": "",
-            "content": "",
             "x":1000,
             "y":500,
             "scale":1,

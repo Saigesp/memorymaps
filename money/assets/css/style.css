@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display: block;font-family:'Ubuntu', sans-serif; }
 audio,canvas,video {display: inline-block;max-width: 100%;}
 html{-webkit-text-size-adjust: 100%;-ms-text-size-adjust:100%;}
-body,button,input,select,textarea {color: #2b2b2b;font-family: 'Ubuntu', sans-serif;font-size: 16px;font-weight: 400;line-height: 1.5;}
+body,button,input,select,textarea {color: #101010;font-family: 'Ubuntu', sans-serif;font-size: 16px;font-weight: 400;line-height: 1.5;}
 body{background: white;}
 a{color: #087be3;text-decoration: none;cursor: pointer;}
 a:focus {outline: 0;color: #08c1e3;}
@@ -123,8 +123,10 @@ body {
     margin: 0;
 }
 .section{
-    padding: 0 40px;
+    padding: 40px 40px;
     margin-bottom: 600px;
+    background: #d5493ef0;
+    color: #f9f8e6;
 }
 .section h1{
 }
@@ -143,7 +145,7 @@ body {
 
 @media only screen and (min-width: 870px) {
     .section{
-        padding: 0 100px;
+        padding: 40px 100px;
         margin-bottom: 600px;
     }
 }
