@@ -147,3 +147,18 @@ body {
         margin-bottom: 600px;
     }
 }
+
+
+
+
+
+
+/* SVG Shits */
+#world .animations > g {
+    opacity: 0;
+    transition: opacity 450ms ease;
+    transition-delay: 2000ms;
+}
+#world .animations g.active {
+    opacity: 1;
+}

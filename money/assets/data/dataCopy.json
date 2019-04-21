@@ -2,7 +2,7 @@
     "stories": [
         {
             "id": 0,
-            "class": "all",
+            "class": "anim-0",
             "title": "",
             "subtitle": "",
             "content": "<img src='assets/img/logos/europa.svg'/>",
@@ -95,57 +95,52 @@
             "countries": []
         },
         {
+            "id": 8,
+            "title": "",
+            "subtitle": "",
+            "content": "<p>Por eso es fundamental una regulación de los promotores y facilitadores de productos fiscales y gestores de patrimonio, con mecanismos de transparencia, registro y sanciones disuasorias para que se abstengan de desarrollar programas de planificación fiscal agresiva, obligándoles a actuar en interés público sin ampararse en el secreto profesional.</p>",
+            "x":956,
+            "y":320,
+            "scale":4,
+            "duration": 4500,
+            "countries": ["Spain"]
+        },
+        {
             "id": 9,
-            "class": "anim-07",
             "title": "Paraísos fiscales",
             "subtitle": "",
-            "content": "<p>La Unión Europea publicó por primera vez su lista de paraísos fiscales en diciembre de 2017 en respuesta a los grandes escándalos de evasión y elusión fiscal que salieron a la luz, como LuxLeaks, los Papeles de Panamá y los Papeles del Paraíso.</p>",
+            "content": "<p>La Unión Europea publicó por primera vez su lista de paraísos fiscales en diciembre de 2017 en respuesta a los grandes escándalos de evasión y elusión fiscal que salieron a la luz, como LuxLeaks, los Papeles de Panamá y los Papeles del Paraíso. Para definir un lugar como paraíso fiscal, analiza las jurisdicciones según tres criterios:</p><ul><li>Nivel de transparencia e intercambio de información</li><li>Existencia de prácticas fiscales perjudiciales como facilitar el traslado de beneficios o la constitución de empresas opacas</li><li>Cumplimiento de las normas internacionales para evitar la erosión de la base imponible</li></ul>",
             "x":1025,
             "y":275,
             "scale":2,
             "duration": 3000,
-            "countries": []
+            "countries": ["Spain", "France"]
         },
         {
             "id": 10,
-            "class": "anim-08",
             "title": "",
             "subtitle": "",
-            "content": "<p>Según sus criterios, son paraísos fiscales algunos países “exóticos”, como las Islas Caimán, Panamá, las Islas Virgenes Británicas, Bahamas, Macao, las Islas Marshal, Isla de Man, St Kitts y Nevis o Aruba.</p>",
+            "content": "<p>Según estos criterios, son paraísos fiscales algunos países “exóticos”, como las Islas Caimán, Panamá, las Islas Virgenes Británicas, Bahamas, Macao, las Islas Marshal, Isla de Man, St Kitts y Nevis o Aruba. Pero también algunos que forman parte de la propia UE, como Chipre, Irlanda, Luxemburgo, Malta y los Países Bajos. De hecho, se estima que el 80% de la evasión de países europeos se hace a través de estos últimos.</p>",
             "x":1000,
             "y":500,
             "scale":1,
-            "duration": 3000,
-            "countries": []
-        },
-        {
-            "id": 10,
-            "class": "anim-09",
-            "title": "",
-            "subtitle": "",
-            "content": "<p>Pero también algunos que forman parte de la propia UE, como Chipre, Irlanda, Luxemburgo, Malta y los Países Bajos.</p><p>De hecho, se estima que el 80% de la evasión de países europeos se hace a través de estos últimos.</p>",
-            "x":1048,
-            "y":280,
-            "scale":4,
             "duration": 3000,
             "countries": ["Cyprus", "Ireland", "Luxembourg", "Netherlands", "Malta"]
         },
         {
             "id": 11,
-            "class": "anim-10",
             "title": "Secreto Bancario",
             "content": "<p>El secreto bancario es una legislación especial que permite y obliga a bancos y entidades financieras a proteger y mantener confidencial la información sobre sus clientes ante terceros, incluso aunque estos sean administraciones públicas o tributarias. Se refiere a todo tipo de datos personales y económicos, incluidos depósitos, número de cuentas o transacciones; y es por ello una herramienta clave para las prácticas de evasión.</p>",
             "x":1017,
             "y":275,
             "scale":8,
             "duration": 4500,
-            "countries": []
+            "countries": ["Switzerland"]
         },
         {
             "id": 12,
-            "class": "anim-11",
             "title": "",
-            "content": "<p>Suiza, por ejemplo, es uno de los paraísos fiscales más antiguos del mundo, y en él el secreto bancario está protegido en la propia Constitución.</p><p>La UE ha identificado cinco prácticas fiscales nocivas en su sistema tributario, pero aunque le ha pedido que lleve a cabo reformas para eliminarlas, hasta el momento Suiza no lo ha hecho.</p>",
+            "content": "<p>Suiza, por ejemplo, es uno de los paraísos fiscales más antiguos del mundo, y en él el secreto bancario está protegido en la propia Constitución.</p><p>La UE ha identificado cinco prácticas fiscales nocivas en su sistema tributario, pero aunque le ha pedido que lleve a cabo reformas para eliminarlas, hasta el momento Suiza no lo ha hecho. El mejor modo de perseguir esta gran evasión fiscal consiste en aplicar sistemas regulatorios capaces de establecer un control de movimiento de capitales.</p>",
             "x":1017,
             "y":275,
             "scale":16,
@@ -154,7 +149,6 @@
         },
         {
             "id": 13,
-            "class": "anim-12",
             "title": "Fondos de inversión",
             "content": "Hay 30 grandes fondos de inversión que tienen presencia en casi todas las empresas del Ibex 35, de los que el 80% o bien tienen su matriz en un paraíso fiscal o mantienen su participación en las empresas a través de filiales en paraísos fiscales. El 91% de las empresas del Ibex está participada por más de 10 de estos fondos. Dentro de este grupo hay grandes gestoras globales (Blackrock, Goldman Sachs), fondos de bancos  extranjeros (Credit Agricole, Deutsche Bank) y fondos soberanos (Norges Bank, Qatar Investment Authority). De media, estas 30 entidades controlan un 27% de las acciones de las empresas del Ibex35, aunque están localizadas en países como Luxemburgo, Países Bajos, Irlanda, Chipre, Panamá, Seychelles, Hong Kong y Singapur.",
             "x":1000,

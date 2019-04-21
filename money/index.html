@@ -113,12 +113,28 @@
                 );
             },
             loadContent(item, duration=item.duration){
+                var self = this;
                 this.centerPoint(item.x,item.y,item.scale,duration)
-                d3.selectAll('path[data-name]').classed('active', false)
+
+                //unmark all countries
+                self.svg.selectAll('path[data-name]').classed('active', false)
+
+                //mark all countries
                 item.countries.forEach(function(country){
-                    d3.selectAll('path[data-name="'+country+'"]')
+                    self.svg.selectAll('path[data-name="'+country+'"]')
                         .classed('active', true)
                 });
+
+                self.svg.selectAll('g').classed('active', false);
+                
+                if(item.class){
+                    if(item.class == 'all'){
+                        self.svg.selectAll('.animations > g').classed('active', true);
+                    }else{
+                        self.svg.selectAll('.'+item.class).classed('active', true);
+                    }
+                }
+
             }
         },
         watch: {
