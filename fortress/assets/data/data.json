@@ -50,18 +50,6 @@
         },
         {
             "id": 1,
-            "class": "llegadas-2",
-            "title": "",
-            "subtitle": "",
-            "content": "<p>La extrema derecha está manipulando la opinión pública para crear temores y recelos irracionales hacia las personas inmigrantes. Esta xenofobia establece muros mentales en las personas, que más tarde exigen muros físicos. El auge y la influencia de la extrema derecha en la política migratoria europea ha dado lugar a un control exagerado y a una criminalización de la migración y de la circulación de las personas, también ha provocado un endurecimiento de las leyes de asilo y de extranjería por parte de los distintos Estados miembros.</p>",
-            "x":1000,
-            "y":275,
-            "scale":3,
-            "duration": 3000,
-            "countries": []
-        },
-        {
-            "id": 1,
             "class": "muros-0",
             "title": "Muros interiores",
             "subtitle": "",
