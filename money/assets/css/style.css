@@ -91,7 +91,7 @@ body {
     transition-delay: 3000ms;
 }
 #map path.active{
-    fill: #decfcf;
+    fill: #000000;
 }
 #overmap {
     position: fixed;
@@ -131,7 +131,17 @@ body {
     background: #d5493ef0;
     color: #f9f8e6;
 }
+.section:last-child{
+    margin-bottom: 0 !important;
+}
 .section h1{
+}
+.section p:last-child{
+    margin-bottom: 0 !important;
+}
+.section img{
+    max-width: 100%;
+    height: auto;
 }
 
 
