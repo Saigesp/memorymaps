@@ -262,7 +262,7 @@
             "id": 16,
             "class": "all",
             "title": "",
-            "content": "<p><strong>#EuropaEnMapas</strong> es un proyecto conjunto del Instituto 25M y la Secretaría de Europa de Podemos. Su vocación es cartografiar aspectos cruciales pra una visión crítica y transformadora de la Europa contemporánea, como son las migraciones y la evasión fiscal. Los mapas, editados primero en papel, se recogen ahora en esta página web.</p><div style='display:flex'><div><img style='width:100%; height:auto;' src='assets/img/logos/GUE.svg'/></div><div><img style='width:100%; height:auto;' src='assets/img/logos/i25m.svg'/></div><div><img style='width:100%; height:auto;' src='assets/img/logos/podemos.svg'/></div></div>",
+            "content": "<p><strong>#EuropaEnMapas</strong> es un proyecto conjunto del Instituto 25M y la Secretaría de Europa de Podemos. Su vocación es cartografiar aspectos cruciales pra una visión crítica y transformadora de la Europa contemporánea, como son las migraciones y la evasión fiscal. Los mapas, editados primero en papel, se recogen ahora en esta página web.</p>",
             "x":1000,
             "y":500,
             "scale":1,
