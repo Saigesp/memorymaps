@@ -133,6 +133,11 @@ body {
 }
 .section h1{
 }
+.section img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 .section p:last-child{
     margin-bottom: 0 !important;
 }

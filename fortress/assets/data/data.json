@@ -27,6 +27,7 @@
         {
             "id": 1,
             "class": "llegadas-0",
+            "ill": "01.png",
             "title": "Llegadas",
             "subtitle": "",
             "content": "<p>Existen varias zonas de entrada de personas migrantes a Europa: África Occidental, Mediterráneo Occidental, Mediterráneo Central, Mediterráneo Oriental, ruta circular de Albania a Grecia, Balcanes Occidental y Fronteras del Este.</p>",
@@ -51,6 +52,7 @@
         {
             "id": 1,
             "class": "muros-0",
+            "ill": "02.png",
             "title": "Muros interiores",
             "subtitle": "",
             "content": "<p>Desde los años 90, en Europa se han erigido al menos 1.000 km de muros para impedir la entrada de personas desplazadas por la fuerza. <strong>10 de los 28 Estados miembros los han erigido</strong> (España, Grecia, Hungría, Bulgaria, Austria, Eslovenia, el Reino Unido, Letonia, Estonia y Lituania), como también <strong>Noruega</strong>, que aunque no es miembro de la UE, pertenece al espacio Schengen.</p>",
@@ -99,6 +101,7 @@
         {
             "id": 1,
             "class": "hot-0",
+            "ill": "03.png",
             "title": "Hotspots",
             "subtitle": "",
             "content": "<p>Los <strong>hotspots</strong> se distinguen de otros centros por la importancia de la presencia de agencias europeas como la EASO, Europol, Eurojust, y sobre todo Frontex.</p><p>Definidos por la UE como dispositivos de acogida para quienes llegan por primera vez a Estados miembros situados en primera línea, su objetivo es clasificar a las personas migrantes en dos tipos de flujos: por un lado aquellos a los que se les reconoce la protección y que serán enviados hacia el norte para su relocalización y por otro aquellos estigmatizados como inmigrantes económicos a los que expulsar; esto los convierte en herramienta de sistematización de las devoluciones forzadas.</p>",
@@ -147,6 +150,7 @@
         {
             "id": 1,
             "class": "mar-0",
+            "ill": "04.png",
             "title": "Operaciones marítimas",
             "subtitle": "",
             "content": "<p>En el área marítima, particularmente en el mar Mediterráneo, hay otras barreras. De las 8 principales operaciones marítimas de la Unión Europea (Mare Nostrum, Poseidón, Hera, Indalo, Minerva, Hermes, Tritón y Sofía), ninguna tiene un mandato exclusivo del rescate de personas, considerando a las personas migrantes como una amenaza.</p>",
@@ -183,6 +187,7 @@
         {
             "id": 1,
             "class": "muertes-0",
+            "ill": "05.png",
             "title": "Muertes en el Mediterráneo",
             "subtitle": "",
             "content": "<p>El Mediterráneo se ha convertido en la <strong>mayor fosa común del mundo</strong>. Según datos del Transnational Institute y de la Organización Internacional de las Migraciones, en el año 2016 el número de muertos o desaparecidos en el mediterráneo fue de más de 5.000, y en 2017 de más de 3.000.</p>",
@@ -219,6 +224,7 @@
         {
             "id": 1,
             "class": "externo-0",
+            "ill": "06.png",
             "title": "Externalización de fronteras",
             "subtitle": "",
             "content": "<p>Desde 2015, la externalización de fronteras se ha convertido en uno de los pilares de la Agenda Europea de Migración. Se trata de acuerdos con países vecinos en los que se pacta para que adopten las mismas políticas migratorias de control y fortificación de fronteras de la UE, a cambio de grandes aportaciones económicas.</p>",
