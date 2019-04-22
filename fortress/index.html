@@ -91,9 +91,13 @@
                         .data(data.stories).enter()
                         .append('section')
                         .attr('class', 'section')
-                        .attr('style', 'margin-bottom:'+(innerHeight*4/5)+'px')
+                        .attr('style', 'margin-bottom:'+(innerHeight*4/5)+'px; margin-top:'+(innerHeight/2)+'px')
 
-                    sections.append('h1').text(function(d){ return d.title }).attr('style', 'margin-top:'+(innerHeight/2)+'px')
+                    sections.filter(function(d){return d.ill;})
+                        .append('img')
+                        .attr('src',function(d){ return 'assets/img/ills/'+d.ill })
+                        
+                    sections.filter(function(d){return d.title;}).append('h1').text(function(d){ return d.title })
                     sections.append('div').html(function(d){ return d.content })
 
                     d3.graphScroll()

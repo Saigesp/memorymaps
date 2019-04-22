@@ -102,7 +102,7 @@
                         .append('img')
                         .attr('src',function(d){ return 'assets/img/ills/'+d.ill })
                         
-                    sections.append('h1').text(function(d){ return d.title })
+                    sections.filter(function(d){return d.title;}).append('h1').text(function(d){ return d.title })
                     sections.append('div').html(function(d){ return d.content })
 
                     d3.graphScroll()
