@@ -91,7 +91,7 @@ body {
     transition-delay: 3000ms;
 }
 #map path.active{
-    fill: #decfcf;
+    fill: #919c9c;
 }
 #overmap {
     position: fixed;

@@ -10,7 +10,7 @@
             "y":275,
             "scale":3,
             "duration": 3000,
-            "countries": []
+            "countries": ["Turkey", "Niger", "Libya", "Egypt", "Sudan", "Morocco"]
         },
         {
             "id": 1,
@@ -230,39 +230,39 @@
         },
         {
             "id": 1,
-            "class": "all",
+            "class": "externo-0",
             "title": "Externalización de fronteras",
             "subtitle": "",
             "content": "<p>Desde 2015, la externalización de fronteras se ha convertido en uno de los pilares de la Agenda Europea de Migración. Se trata de acuerdos con países vecinos en los que se pacta para que adopten las mismas políticas migratorias de control y fortificación de fronteras de la UE, a cambio de grandes aportaciones económicas.</p>",
             "x":1000,
-            "y":500,
-            "scale":1,
+            "y":275,
+            "scale":3,
             "duration": 3000,
-            "countries": []
+            "countries": ["Turkey", "Niger", "Libya", "Egypt", "Sudan", "Morocco"]
         },
         {
             "id": 1,
-            "class": "all",
+            "class": "externo-1",
             "title": "",
             "subtitle": "",
             "content": "<p>Estos acuerdos han convertido a países como Turquía, Níger, Túnez, Libia, Egipto y Sudán en guardianes de fronteras, encargados de hacer más efectiva la repatriación de migrantes en situación irregular sin derecho a recibir asilo y así controlar más exhaustivamente las rutas migratorias que atraviesan sus territorios, para que las personas desplazadas no lleguen a las fronteras de la UE.</p>",
-            "x":1000,
-            "y":500,
-            "scale":1,
+            "x":1135,
+            "y":355,
+            "scale":4,
             "duration": 3000,
-            "countries": []
+            "countries": ["Turkey", "Niger", "Libya", "Egypt", "Sudan", "Morocco"]
         },
         {
             "id": 1,
-            "class": "all",
+            "class": "externo-2",
             "title": "",
             "subtitle": "",
             "content": "<p>La militarización de las fronteras ha causado un aumento de la tasa de personas desplazadas y un aumento de la peligrosidad de las rutas. La toma de decisiones e implementación sobre la externalización de fronteras se ha realizado a una velocidad vertiginosa y sin control democrático por parte del Parlamento Europeo; y su financiación ha beneficiado enormemente a la industria armamentística y las compañías de seguridad fronteriza y biométrica.</p>",
-            "x":1000,
-            "y":500,
-            "scale":1,
+            "x":1135,
+            "y":355,
+            "scale":2,
             "duration": 3000,
-            "countries": []
+            "countries": ["Turkey", "Niger", "Libya", "Egypt", "Sudan", "Morocco"]
         },
         {
             "id": 16,
@@ -273,7 +273,7 @@
             "y":500,
             "scale":1,
             "duration": 4500,
-            "countries": [""]
+            "countries": ["Turkey", "Niger", "Libya", "Egypt", "Sudan", "Morocco"]
         }
     ]
 }
