@@ -59,6 +59,7 @@
                                     <p class="subtitle" v-html="filter.subtitle"></p>
                                     <img :src="'assets/img/ills/'+filter.id+'.jpg'" alt="filter.title">
                                     <p class="illustred">Ilustrado por {{filter.illustrator}}</p>
+                                    <p class="illustred">{{filter.collab}}</p>
                                     <p class="text" v-html="filter.text"></p>
                                 </div>
                             </li>
@@ -78,7 +79,7 @@
                     </div>
                 </aside>
                 
-                <div class="overmask" :class="{active: sidebaropen}" @click="sidebaropen = ''"></div>
+                <div class="overmask" :class="{active: sidebaropen}" @click="sidebaropen = ''" :style="{background: color}"></div>
 
                 <div class="ensigns">
                     <a href="/">
@@ -140,6 +141,7 @@
                 desc: '',
             },
             filters: [],
+            color: '#000',
         },
         created: function(){
             var self = this;
@@ -150,6 +152,7 @@
             });
             EventBus.$on('point_click', function(data){
                 self.point = data;
+                self.color = data.color;
                 self.sidebaropen = 'main';
             });
         },
