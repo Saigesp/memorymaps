@@ -76,6 +76,7 @@
             content: {},
             current: -1,
             innerHeight: window.innerHeight,
+            gs: function a(){},
         },
         created: function(){
             var self = this;
@@ -157,6 +158,7 @@
         },
         watch: {
             current(val){
+                window.dispatchEvent(new Event('resize'));
                 this.loadContent(this.content)
             }
         }

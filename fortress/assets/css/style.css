@@ -128,9 +128,14 @@ body {
     background: #0c6569f0;
     color: #f1f1f1;
 }
+.section:last-child{
+    margin-bottom: 0 !important;
+}
 .section h1{
 }
-
+.section p:last-child{
+    margin-bottom: 0 !important;
+}
 
 .logos {
     width: 100%;
