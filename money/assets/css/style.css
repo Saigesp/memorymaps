@@ -1,7 +1,7 @@
 /*
 
-Mapas de la Memoria - i25M
-Desarrollo: @Saigesp
+EuropaEnMapas - i25M
+Desarrollo: @dadasign_
 
 */
 
@@ -97,13 +97,17 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 #overmap > div{
     width: 100%;
     position: absolute;
 }
+
 #overmap .top{
     top: 0;
+    pointer-events: none;
 }
 #overmap .bottom{
     bottom: 0;
@@ -111,13 +115,57 @@ body {
 #overmap .right{
     right: 0;
 }
+#overmap .left{
+    left: 0;
+}
 #overmap .right > div{
     margin-left: auto;
 }
-#sections {
-    overflow: auto;
+#overmap .main {
+    padding: 0 10px;
+    top: 100%;
+    box-sizing: border-box;
+    transition: top 350ms ease-in-out;
+    pointer-events: none;
+}
+#overmap .main.active {
+    top: 0;
+}
+#overmap .about {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    max-width: 600px;
+    background: #fffffff0;
+    margin: 100px auto 0;
+    pointer-events: all;
+}
+#overmap .about p:last-child {
+    margin-bottom: 0;
 }
 
+.overmask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.overmask.active {
+    background: #00000087;
+    pointer-events: all;
+}
+
+#sections {
+    overflow: auto;
+    position: relative;
+}
+
+.topmenu img {
+    pointer-events: all;
+    cursor: pointer;
+}
 
 
 .section-wrap {
@@ -137,7 +185,7 @@ body {
 .section h1{
 }
 .section p:last-child{
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
 }
 .section img{
     max-width: 100%;

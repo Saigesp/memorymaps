@@ -45,9 +45,12 @@
         <div id="app">
             <div id="map"></div>
             <div id="overmap">
+
+                <div class="overmask" :class="{active: sidebar != ''}" @click="sidebar = ''"></div>
+
                 <div class="top right">
                     <div class="topmenu">
-                        <a href="/"><img src="assets/img/logos/europa.svg" alt="EuropaEnMapas"></a>
+                        <img src="assets/img/logos/europa.svg" alt="EuropaEnMapas" @click="sidebar='about'">
                     </div>
                 </div>
                 <div class="bottom right">
@@ -57,9 +60,17 @@
                         <a href="https://podemos.info/" target="_blank"><img src="assets/img/logos/podemos.svg" alt="Podemos"></a>
                     </div>
                 </div>
+                <div class="top left main" :class="{active:sidebar=='about'}">
+                    <div class="about">
+                        <p><strong>#EuropaEnMapas</strong> es un proyecto conjunto del Instituto 25M y la Secretaría de Europa de Podemos. Su vocación es cartografiar aspectos cruciales pra una visión crítica y transformadora de la Europa contemporánea, como son las migraciones y la evasión fiscal. Los mapas, editados primero en papel, se recogen ahora en esta página web.</p>
+                    </div>
+                </div>
             </div>
             <main id="sections">
                 <div class="section-wrap">
+                </div>
+                <div class="section-wrap">
+                    <section class="section"><span @click="goToTop()" style="cursor: pointer;">Volver al inicio</span><br><br></section>
                 </div>
             </main>
         </div>
@@ -77,6 +88,7 @@
             current: -1,
             innerHeight: window.innerHeight,
             gs: function a(){},
+            sidebar: '',
         },
         created: function(){
             var self = this;
@@ -154,6 +166,9 @@
                     }
                 }
 
+            },
+            goToTop(){
+                window.scrollTo(0,0);
             }
         },
         watch: {
