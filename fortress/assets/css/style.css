@@ -176,7 +176,7 @@ body {
 .section{
     padding: 40px 40px;
     margin-bottom: 600px;
-    background: #0c6569f0;
+    background: rgba(12, 101, 105, 0.95);
     color: #f1f1f1;
 }
 .section:last-child{
