@@ -36,7 +36,7 @@ class D3Map {
     }
 
     initGraph() {
-        var self = this;
+        let self = this;
         this.map = L.map(this.selection.attr('id'))
             .setView([self.cfg.lat,self.cfg.lng], self.cfg.zoom);
 

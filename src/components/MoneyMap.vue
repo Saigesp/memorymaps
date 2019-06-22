@@ -24,8 +24,11 @@
     <main id="sections" class="moneycontent">
       <div class="section-wrap">
       </div>
-      <div class="section-wrap">
+      <div class="section-wrap" v-show="loaded">
         <section class="section"><span @click="goToTop()" style="cursor: pointer;">Volver al inicio</span><br><br></section>
+      </div>
+      <div class="section-wrap section-loading" v-show="!loaded">
+        <img :src="ills['spinner']" alt="Loading">
       </div>
     </main>
   </div>
@@ -44,6 +47,7 @@ export default {
       current: -1,
       innerHeight: window.innerHeight,
       sidebar: '',
+      loaded: false,
       img: {
         europa: require('../assets/img/logos/europa.svg'),
         GUE: require('../assets/img/logos/GUE.svg'),
@@ -60,11 +64,12 @@ export default {
         '04.png': require('../assets/img/money/04.png'),
         '05.png': require('../assets/img/money/05.png'),
         '06.png': require('../assets/img/money/06.png'),
+        'spinner': require('../assets/img/icons/oval.svg'),
       }
     }
   },
   created: function() {
-    var self = this;
+    let self = this;
     d3.xml(this.map).then(world => {
 
         d3.select('#map').node().append(world.documentElement);
@@ -77,7 +82,7 @@ export default {
 
         self.canvas = self.svg.call(self.zoom)
 
-        var sections = d3.select('.section-wrap').selectAll('.section')
+        let sections = d3.select('.section-wrap').selectAll('.section')
           .data(this.datum.stories).enter()
           .append('section')
           .attr('class', 'section')
@@ -91,16 +96,19 @@ export default {
         sections.append('div').html(function(d) { return d.content })
 
         d3.graphScroll()
+          .container(d3.select('.section-wrap'))
           .sections(d3.selectAll('.section'))
-          .on('active', function(i) {
+          .on('active', (i) => {
             self.content = self.datum.stories[i]
             self.current = i
           })
 
+        this.loaded = true
+
     })
   },
   mounted: function() {
-    var self = this;
+    let self = this;
     
     window.onresize = function(event) {
       self.loadContent(self.content, 1500)
@@ -118,7 +126,8 @@ export default {
       );
     },
     loadContent(item, duration = item.duration) {
-      var self = this;
+      let self = this;
+      duration = item.duration ? item.duration : duration
       this.centerPoint(item.x, item.y, item.scale, duration)
 
       //unmark all countries

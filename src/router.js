@@ -4,7 +4,7 @@ require('./components')
 
 Vue.use(Router)
 
-var ComponentFactory = function(htmltag){
+let ComponentFactory = function(htmltag){
     return { template: '<'+htmltag+'></'+htmltag+'>' }
 }
 

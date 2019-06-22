@@ -11,8 +11,8 @@ class D3MapPoints extends D3Map  {
         }
     }
     loadPoints(points){
-        var self = this;
-        var tdata = {};
+        let self = this;
+        let tdata = {};
 
         // comprobamos puntos locales
         self.data.forEach(function(d){
@@ -32,8 +32,8 @@ class D3MapPoints extends D3Map  {
             // punto remoto no existe en local -> creamos
             if(self.data.indexOf(d) === -1){
                 // puntos a crear
-                var lnglat = new L.LatLng(+d.latitude, +d.longitude);
-                var circle = new L.circle((lnglat), self.cfg.circlesize, {
+                let lnglat = new L.LatLng(+d.latitude, +d.longitude);
+                let circle = new L.circle((lnglat), self.cfg.circlesize, {
                     color: d.color,
                     opacity:1,
                     fillOpacity:.5,
@@ -49,7 +49,7 @@ class D3MapPoints extends D3Map  {
         })
 
         self.data = []
-        for (var property in tdata) {
+        for (let property in tdata) {
             if (tdata.hasOwnProperty(property)) {
                 self.data.push(tdata[property])
             }

@@ -193,7 +193,7 @@ export default {
     }
   },
   created: function() {
-    var self = this
+    let self = this
     EventBus.$on('map_move', function(data) {
       self.lat = data.lat;
       self.lng = data.lng;
@@ -206,8 +206,8 @@ export default {
     });
   },
   mounted: function() {
-    var self = this;
-    var points = []
+    let self = this;
+    let points = []
 
     this.datum.maps.forEach(function(map) {
       points = points.concat(map.items);
@@ -220,7 +220,7 @@ export default {
   methods: {
     toggleFilter(filter) {
       if (filter) {
-        var index = this.inactivefilters.indexOf(filter);
+        let index = this.inactivefilters.indexOf(filter);
         if (index > -1) this.inactivefilters.splice(index, 1)
         else this.inactivefilters.push(filter)
       } else this.inactivefilters = [];
