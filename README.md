@@ -1,58 +1,43 @@
 # memorymaps
 Conjunto de mapas realizado para el Instituto 25M
 
+**Versión lista para servir:** Archivo [dist.zip](/dist.zip)
+
 ## Estructura
-Se compone de tres mapas independientes entre si: `fortress/`, `money/` y `memory/`, y una pequeña landing (archivos `index.html` y carpeta `assets/` )
 
-Cada mapa contiene en su interior los archivos html/js/css necesarios para su funcionamiento.
+Desarrollado con Vue, D3 y Leaflet.
 
-Cada mapa contiene un archivo de datos `nombre_mapa/assets/data/data.json` desde el que se puede cambiar el contenido.
+Node, Webpack, Babel y otros usados en el desarrollo.
 
-## Ver mapa en desarrollo
+## Servidor de desarrollo (con hot reloading)
 
-Debido a la política [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/Access_control_CORS) en algunos navegadores (Chrome) no se visualiza directamente el contenido si no está en un servidor web. 
+``` bash
+npm install
 
-Se recomienda desarrollar con **Firefox**. o levantar un servidor local. Para levantar un servidor local:
+npm run dev
+```
+
+## Generar build
+
+``` bash
+npm run build
+```
+
+## Servidor externo para levantar build
 
 **Python 3**
 
-Ejecutar en la raíz del proyecto:
+Dentro de la carpeta `dist` del proyecto:
 
-```sh
+``` bash
 python3 -m http.server
 ```
 
-Abrir [http://localhost:8000/](http://localhost:8000/)
-
 **Nodejs**
 
-Instalar globalmente [http-server]() y ejecutar en el directorio del proyecto:
-
-    npm install http-server -g
-    http-server
-
-Abrir [http://localhost:8080/](http://localhost:8080/)
-
-
-# newmemory
-
-> A Vue.js project
-
-
-## Build Setup
+Ejecutar en el directorio `dist` del proyecto:
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm install http-server -g
+http-server
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
